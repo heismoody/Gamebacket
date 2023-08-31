@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .buynowbtn{
+        @apply bg-red-700 py-2 px-5 rounded-lg gap-x-2 text-white text-xs font-semibold flex justify-center items-center
+    }
+    .playtrailerbtn{
+        @apply bg-black/70 py-2 px-5 rounded-lg gap-x-2 text-white text-xs font-semibold flex justify-center items-center
+    }
+    .favoritebtn{
+        @apply bg-transparent gap-x-2 text-white text-sm font-semibold flex justify-center items-center
+    }
+    .controlbtn{
+        @apply bg-black/20 border-[1px] border-white/50 text-white p-1
+    }
+    .viewallbtn{
+        @apply bg-transparent py-2 px-4 rounded-lg gap-x-2 text-white/50 text-xs text-center border-[1px] border-white/50 font-semibold 
+    }
+}
