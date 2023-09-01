@@ -24,7 +24,6 @@ const GameCard = ({...props}:gamecard) => {
                     </button>
                 </div>
             </div>
-            <div className="w-full h-full absolute top-0"/>
         </div>
     </div>
   )
