@@ -1,7 +1,6 @@
-interface gamecard{
+interface Icardcomponentprops{
     title: string;
     description: string;
-    price: number;
-    category: string;
     image: string;
+    price: number;
 }
