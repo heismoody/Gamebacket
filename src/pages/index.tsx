@@ -1,4 +1,5 @@
 import GameCard from "../components/gameCard"
+import NewRelease from "./newRelease/newRelease"
 
 const Homepage = () => {
   return (
@@ -88,6 +89,10 @@ const Homepage = () => {
                 image="https://i.pinimg.com/564x/51/45/d0/5145d0a6a35fb97c8ccc7ae5c450eda9.jpg"
             />
         </div>
+        <div className="w-full">
+            <NewRelease/>
+        </div>
+        
 
     </section>
   )
