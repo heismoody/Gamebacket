@@ -1,6 +1,6 @@
 const GameCard = ({...props}:gamecard) => {
   return (
-    <div className="rounded-xl overflow-hidden drop-shadow-lg border border-white/70">
+    <div className="rounded-xl overflow-hidden drop-shadow-lg border border-white/70 w-[200px] h-fit">
         <div className="bg-blue-500 text-xl font-medium text-white px-5 border-b border-white/70">
             {props.category}
         </div>
