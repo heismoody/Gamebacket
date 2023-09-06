@@ -1,5 +1,6 @@
 import GameCard from "../components/gameCard"
 import NewRelease from "./newRelease/newRelease"
+import ShopByFormat from "./newRelease/shopByFormat/shopByFormat"
 
 const Homepage = () => {
   return (
@@ -92,7 +93,9 @@ const Homepage = () => {
         <div className="w-full">
             <NewRelease/>
         </div>
-        
+        <section>
+            <ShopByFormat/>
+        </section>
 
     </section>
   )
