@@ -2,7 +2,7 @@ import CardComponent from "./releaseCardComponent/cardComponent"
 
 const NewRelease = () => {
   return (
-    <div>
+      <div className="w-full">
         <div className="flex flex-row justify-between px-10 w-full">
             <span className="text-2xl text-white font-semibold">
                 New releases
@@ -37,7 +37,7 @@ const NewRelease = () => {
               price={100000}
             />
         </div>
-    </div>
+      </div>
   )
 }
 
