@@ -3,7 +3,7 @@ import GameCard from "../../../components/gameCard"
 export const PreOrders = () => {
   return (
     <div className="bg-black/60">
-      <div className="w-full bg-gradient-to-t from-slate-500">
+      <div className="w-full bg-gradient-to-t from-slate-900">
           <div className="flex flex-row justify-between px-10 w-full py-3">
             <span className="text-2xl text-white font-semibold">Preorders</span>
             <button className="viewallbtn">View all</button>
