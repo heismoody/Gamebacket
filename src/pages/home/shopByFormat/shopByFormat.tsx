@@ -2,7 +2,7 @@ import GameCard from "../../../components/gameCard"
 
 const ShopByFormat = () => {
   return (
-    <div className="px-8 flex justify-between">
+    <div className="px-8 flex justify-between py-10">
         <div className="text-white/80 w-[40%]">
             <strong className="block text-3xl">Shop by format</strong>
             <ul className="flex py-2">

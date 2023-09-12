@@ -1,3 +1,4 @@
+import Footer from "../../components/footer/footer";
 import NavigationBar from "../../components/navigation/navigationBar";
 import ConnectWithUs from "./connectWithUs/connectWithUs";
 import { LandingPage } from "./landingPage";
@@ -19,6 +20,7 @@ const Homepage = () => {
         <ShopByFormat/>
         <ConnectWithUs/>
       </section>
+    <Footer/>
     </>
   );
 };
