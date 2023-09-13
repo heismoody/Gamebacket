@@ -1,162 +1,94 @@
 const NavigationBar = () => {
   return (
-    <>
-    <div className="flex flex-col items-center bg-black/80 text-white">
-      <div className="w-full flex justify-center border-b-[1px] border-white/40">
-        <div className="flex items-center justify-between w-[90%] py-3">
-          <div className="flex items-center gap-x-8">
-            <div className="h-[50px]">
-              <img className="w-full h-full" src="gamebacket.webp" alt="" />
-            </div>
-            <div>
-              <form>
-                <div className="flex">
-                  <button
-                    id="dropdown-button"
-                    data-dropdown-toggle="dropdown"
-                    className="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg"
-                    type="button"
-                  >
-                    All{" "}
-                    <svg
-                      className="w-2.5 h-2.5 ml-2.5"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 10 6"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m1 1 4 4 4-4"
-                      />
-                    </svg>
-                  </button>
-                  <div
-                    id="dropdown"
-                    className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-                  >
-                    <ul
-                      className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="dropdown-button"
-                    >
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          Mockups
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          Templates
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          Design
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          Logos
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="relative w-full">
-                    <input
-                      type="search"
-                      id="search-dropdown"
-                      className="block p-1.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 outline-none"
-                      placeholder="Search games"
-                      required
-                    />
-                    <button
-                      type="submit"
-                      className="absolute top-0 right-0 py-1.5 px-4 text-sm font-medium h-full text-white bg-red-600 rounded-r-lg border border-red-600 outline-none"
-                    >
-                      <span>Search</span>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div>
-            <div className="flex items-center space-x-2">
-              <img
-                className="w-10 h-10 rounded-full"
-                src="https://i.pinimg.com/564x/03/d1/48/03d148b3453464c751b78f14e8561652.jpg"
-                alt=""
-              />
-              <div className="font-medium dark:text-white">
-                <div>Jese Leos</div>
-              </div>
+    <nav className="flex justify-center bg-black text-white font-oxanium">
+      <div className="w-[80%] flex justify-between items-center py-5">
+        <div></div>
+        <div>
+          <ul className="flex items-center font-bold text-base gap-5">
+            <li>Home</li>
+            <li>About</li>
+            <li className="flex items-center gap-1">
+              <span>Shop</span>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
+                  fill="currentColor"
                   className="w-4 h-4"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    fillRule="evenodd"
+                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                    clipRule="evenodd"
                   />
                 </svg>
               </span>
-              <div className="pl-4">
-                <div className="relative">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-7 h-7"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                    />
-                  </svg>
-                  <span className="-top-2 left-4 absolute flex justify-center items-center  w-6 h-6 text-xs bg-red-500 border-2 border-white dark:border-gray-800 rounded-full">2</span>
-                </div>
-              </div>
+            </li>
+            <li>Blog</li>
+            <li className="flex items-center gap-1">
+              <span>Pages</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div className="flex items-center gap-4">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-5 h-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div className="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+              />
+            </svg>
+            <div className="absolute -top-1 -right-2 rounded-full flex justify-center items-center text-sm font-bold text-black bg-[#FFC01D] w-5 h-5">
+              <span>10</span>
             </div>
+          </div>
+          <div className="flex gap-3">
+            <button className="navbtn border-[1px] border-white/40">
+              Sign in
+            </button>
+            <button className="navbtn bg-[#FFC01D] text-black">Sign up</button>
           </div>
         </div>
       </div>
-      <div className="w-[90%]">
-        <ul className="list-none flex justify-between text-xs py-2 font-medium">
-          <li>DIGITAL DOWNLOAD</li>
-          <li>PRE ORDERS</li>
-          <li>NEW RELEASES</li>
-          <li>PS4</li>
-          <li>XBOX ONE</li>
-          <li>NENTENDO</li>
-          <li>CONSOLE & ACCESSORIES</li>
-        </ul>
-      </div>
-    </div>
-    </>
+    </nav>
   );
 };
 
