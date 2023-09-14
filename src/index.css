@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Oxanium:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&family=Oxanium:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,10 @@
         @apply py-1 px-3 rounded font-bold text-base
     }
     .footerlist{
-        @apply opacity-70 font-inter flex flex-col gap-2
+        @apply opacity-70 font-inter font-normal flex flex-col gap-2
+    }
+    label{
+        @apply block pb-4
     }
     .buynowbtn{
         @apply bg-red-700 py-2 px-5 rounded-lg gap-x-2 text-white text-xs font-semibold flex justify-center items-center
