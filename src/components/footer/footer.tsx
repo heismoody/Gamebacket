@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="flex gap-5 pb-8">
             <div>
               <label>About Gameplay</label>
-              <ul className="footerlist">
+              <ul className="descr-1">
                 <li>About us</li>
                 <li>Contact us</li>
                 <li>Careers</li>
@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
             <div>
               <label>Buy</label>
-              <ul className="footerlist">
+              <ul className="descr-1">
                 <li>How to buy</li>
                 <li>Game List</li>
                 <li>Collections</li>
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
             <div>
               <label>Help</label>
-              <ul className="footerlist">
+              <ul className="descr-1">
                 <li>FAQ</li>
                 <li>How to active game</li>
                 <li>Create a ticket</li>
@@ -31,15 +31,15 @@ export default function Footer() {
             </div>
             <div>
               <label>Community</label>
-              <ul className="footerlist">
+              <ul className="descr-1">
                 <li>Blog</li>
                 <li>Giveaway</li>
                 <li>Become affilate</li>
               </ul>
             </div>
           </div>
-          <div className="opacity-70 font-inter font-normal border-y-[1px] border-white/20 py-7">
-            <ul className="flex items-between gap-5">
+          <div className="border-y-[1px] border-white/20 py-7">
+            <ul className="descr-1 flex-row items-between gap-5">
               <li>Legal</li>
               <li>Privacy policy</li>
               <li>Our thanks</li>
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col h-fit bg-[url('bg-newsletter.png')] py-10 px-10">
-          <span className="font-inter font-black text-[#d22779] text-[13px] tracking-[5px]">
+          <span className="introheading-1">
             NEWSLETTER
           </span>
           <span className="text-5xl py-4">Get up to $100 off*</span>
@@ -103,7 +103,7 @@ export default function Footer() {
               className="py-2 text-black/80 outline-none pl-3 pr-28"
               required
             />
-            <button className="navbtn bg-[#FFC01D] text-black py-2 px-6">
+            <button className="navbtn bg-primary text-black py-2 px-6">
               Subscribe
             </button>
           </div>

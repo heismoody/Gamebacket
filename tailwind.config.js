@@ -9,6 +9,13 @@ export default {
       fontFamily: {
         oxanium: ["oxanium", "sans-serif"],
         inter: ["inter","sans-serif"]
+      },
+      colors: {
+        primary: "#FFC01D",
+        secondary: "#0200A7",
+        tertiary: "#d22779",
+        submessage: "#95959f",
+        background: "#11111B",
       }
     },
   },
