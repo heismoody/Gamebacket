@@ -6,30 +6,21 @@
 
 @layer components{
     .navbtn{
-        @apply py-1 px-3 rounded font-bold text-base
+        @apply py-1 px-3 rounded-sm font-bold text-base
     }
-    .footerlist{
-        @apply opacity-70 font-inter font-normal flex flex-col gap-2
+    .descr-1{
+        @apply font-inter font-normal flex flex-col gap-2 text-submessage
     }
     label{
         @apply block pb-4
     }
-    .buynowbtn{
-        @apply bg-red-700 py-2 px-5 rounded-lg gap-x-2 text-white text-xs font-semibold flex justify-center items-center
+    .introheading-1{
+        @apply font-inter font-black text-tertiary text-[13px] tracking-[5px]
     }
-    .playtrailerbtn{
-        @apply bg-black/70 py-2 px-5 rounded-lg gap-x-2 text-white text-xs font-semibold flex justify-center items-center
-    }
-    .favoritebtn{
-        @apply bg-transparent gap-x-2 text-white text-sm font-semibold flex justify-center items-center
-    }
-    .controlbtn{
-        @apply bg-black/20 border-[1px] border-white/50 text-white p-1
+    .introheading-2{
+        @apply text-5xl font-oxanium font-bold text-white
     }
     .viewallbtn{
-        @apply bg-transparent py-2 px-4 rounded-lg gap-x-2 text-white/50 text-xs text-center border-[1px] border-white/50 font-semibold 
-    }
-    .releasehover{
-        @apply w-[330px] h-[210px] border-[1px] border-white/80
+        @apply navbtn bg-primary py-2 h-fit w-fit px-6 font-oxanium
     }
 }

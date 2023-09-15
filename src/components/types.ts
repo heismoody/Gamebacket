@@ -5,3 +5,8 @@ interface gamecard{
     category: string;
     image: string;
 }
+
+interface Iavatar {
+    image: string;
+
+}
