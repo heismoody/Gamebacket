@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&family=Oxanium:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .imgrender{
+        @apply w-full h-full object-cover
+    }
+    .navbtn{
+        @apply py-1 px-3 rounded-sm font-bold text-base
+    }
+    .descr-1{
+        @apply font-inter font-normal flex flex-col gap-2 text-submessage
+    }
+    label{
+        @apply block pb-4
+    }
+    .introheading-1{
+        @apply font-inter font-black text-tertiary text-[13px] tracking-[5px]
+    }
+    .introheading-2{
+        @apply text-5xl font-oxanium font-bold text-white
+    }
+    .viewallbtn{
+        @apply navbtn bg-primary py-2 h-fit w-fit px-6 font-oxanium
+    }
+}
