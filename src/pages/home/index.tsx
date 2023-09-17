@@ -17,7 +17,7 @@ const Homepage = () => {
   return (
     <>
       <section className="flex flex-col items-start justify-center bg-background">
-        <div className="w-full bg-[url('hero-home.jpg')] bg-cover bg-no-repeat relative">
+        <div className="w-full bg-[url('/hero-home.jpg')] bg-cover bg-no-repeat relative">
           <div className="absolute w-full h-full top-0 bg-black/50"/>
           <NavigationBar/>
           <LandingPage/>

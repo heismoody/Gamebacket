@@ -22,7 +22,7 @@ export const PreOrders = () => {
             actualprice="40,000 Tsh"
           />
         </div>
-        <div className="w-[31%] p-8 bg-[url('pattern-pre-order.png')] bg-cover">
+        <div className="w-[31%] p-8 bg-[url('/pattern-pre-order.png')] bg-cover">
           <CardDetail
             name="PRE-ORDER"
             title="Pre-Order Games"

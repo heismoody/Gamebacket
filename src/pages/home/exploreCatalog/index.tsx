@@ -7,7 +7,7 @@ export default function ExploreCatalog() {
             <div className="w-[60%] h-[460px] ">
                 <img src="catalog-sect.jpg" alt="" className="imgrender"/>
             </div>
-            <div className="bg-[url('bg-catalog.png')] w-[40%] p-16">
+            <div className="bg-[url('/bg-catalog.png')] w-[40%] p-16">
                 <CardDetail
                 name="CATALOG"
                 title="Explore More Our Catalog"
