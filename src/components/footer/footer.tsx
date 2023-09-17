@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative flex justify-center bg-[#15111E] text-white items-center font-oxanium font-bold h-[80vh] bg-[url('footer-bg.jpg')] bg-cover">
+    <footer className="relative flex justify-center bg-[#15111E] text-white items-center font-oxanium font-bold h-[80vh] bg-[url('/footer-bg.jpg')] bg-cover">
       <div className="w-full h-full bg-[#10111D]/90 top-0 absolute"/>
       <div className="w-[1161px] h-full flex py-20 relative gap-10">
         <div className="flex flex-col">
@@ -85,7 +85,7 @@ export default function Footer() {
             <span className="text-xs">© 2023 GameBacket. Implemented By Heismoody</span>
           </div>
         </div>
-        <div className="flex flex-col h-fit bg-[url('bg-newsletter.png')] py-10 px-10">
+        <div className="flex flex-col h-fit bg-[url('/bg-newsletter.png')] py-10 px-10">
           <span className="introheading-1">
             NEWSLETTER
           </span>

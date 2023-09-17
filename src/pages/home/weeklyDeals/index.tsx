@@ -3,7 +3,7 @@ import SectionHeader from "../homeComponents/sectionHeader";
 
 export default function WeeklyDeals() {
   return (
-    <section className="w-full flex justify-center items-center bg-[url('pattern-secondary.png')] py-20">
+    <section className="w-full flex justify-center items-center bg-[url('/pattern-secondary.png')] py-20">
         <div className="w-[1161px]">
             <SectionHeader
                 reused
