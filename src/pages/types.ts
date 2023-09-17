@@ -8,7 +8,8 @@ interface Icardcomponentprops{
 interface IsectionHeader{
     name: String;
     title: String;
-    description: String
+    description: String;
+    reused?: boolean;
 }
 
 interface ItestimonyCard{
@@ -22,7 +23,8 @@ interface ItestimonyCard{
 interface IpreOrderCard{
     imageurl: string;
     name: string;
-    price: string;
+    actualprice: string;
+    promoprice?: string;
 }
 
 interface IcardDetails{
@@ -30,5 +32,25 @@ interface IcardDetails{
     title: string;
     description: string;
     btnName: string;
-    reused?: boolean;
+    gamenow?: boolean;
+    preorder?: boolean;
+    catalog?: boolean;
+}
+
+interface IcategoryCard{
+    imageURL: string;
+    categoryname: String;
+}
+
+interface Itrendcard{
+    imageurl: string;
+    name: string;
+    promoprice?: string;
+    actualprice: string;
+}
+
+interface Ilandcard{
+    iconurl: string;
+    title: string;
+    description: string;
 }

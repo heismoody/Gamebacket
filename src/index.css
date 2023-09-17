@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer components{
+    .imgrender{
+        @apply w-full h-full object-cover
+    }
     .navbtn{
         @apply py-1 px-3 rounded-sm font-bold text-base
     }

@@ -1,43 +1,79 @@
-import CardComponent from "./releaseCardComponent/cardComponent";
+import AddToCartCard from "../homeComponents/addToCartCard";
+import SectionHeader from "../homeComponents/sectionHeader";
 
 const NewRelease = () => {
   return (
-    <div className="w-full h-[60vh] flex items-center relative">
-      <div className="w-full">
-        <div className="flex flex-row justify-between px-10 w-full">
-          <span className="text-2xl text-white font-semibold">
-            New releases
-          </span>
-          <button className="viewallbtn">View all</button>
-        </div>
-        <div className="px-10 pb-5 flex justify-between items-center w-full h-[250px]">
-          <CardComponent
-            title="Watch Dogs"
-            image="https://assets.vg247.com/current//2014/05/watch_dogs.jpg"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-            price={40000}
+    <section className="w-full flex justify-center items-center py-24">
+      <div className="w-[1161px]">
+        <SectionHeader
+          name="NEW GAME"
+          title="New Releases"
+          description="Stay Ahead with Latest and Greatest Games - Explore Releases Now!"
+        />
+        <div className="grid grid-cols-6 gap-x-[26px] gap-y-8 pt-20">
+          <AddToCartCard
+            imageurl="product-flights.jpg"
+            name="Plane Simulation"
+            actualprice="40,000 Tsh"
           />
-          <CardComponent
-            title="Grand Theft Auto 5"
-            image="https://c4.wallpaperflare.com/wallpaper/262/188/865/new-grand-theft-auto-v-grand-theft-auto-5-game-wallpaper-preview.jpg"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-            price={80000}
+          <AddToCartCard
+            imageurl="product-racing.jpg"
+            name="F2 Championship"
+            actualprice="40,000 Tsh"
           />
-          <CardComponent
-            title="Assassin Creed III"
-            image="https://c4.wallpaperflare.com/wallpaper/486/661/140/assassin-s-creed-3-connor-free-running-wallpaper-preview.jpg"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-            price={60000}
+          <AddToCartCard
+            imageurl="product-fife.jpg"
+            name="FIFA 23"
+            actualprice="40,000 Tsh"
           />
-          <CardComponent
-            title="Need For Speed Payback"
-            image="https://c4.wallpaperflare.com/wallpaper/834/182/492/need-for-speed-need-for-speed-payback-car-ford-wallpaper-preview.jpg"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-            price={100000}
+          <AddToCartCard
+            imageurl="product-bussimulation.jpg"
+            name="Bus Simulator 24"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product-warlord-1.jpg"
+            name="Call of Duty"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product-basketb.jpg"
+            name="Basketball 2k2"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product-snowball.jpg"
+            name="Snowball"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product-romans.jpg"
+            name="The Romans"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product-kungfumaster.jpg"
+            name="Kungfu Master"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product1.jpg"
+            name="Evil Insider"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="trend1.jpg"
+            name="Hello Friend 4"
+            actualprice="40,000 Tsh"
+          />
+          <AddToCartCard
+            imageurl="product-vikings.jpg"
+            name="The Vikings"
+            actualprice="40,000 Tsh"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

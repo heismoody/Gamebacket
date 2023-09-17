@@ -3,7 +3,7 @@ import CardDetail from "../homeComponents/cardDetail";
 export default function GetNow() {
   return (
     <section className="w-full flex justify-center">
-      <div className="w-[85%] flex gap-10">
+      <div className="w-[1161px] flex gap-10">
         <div className="relative">
           <img src="shape-ellipse.png" alt="" />
           <div className="bg-black p-10 w-[520px] absolute top-24 left-14">
@@ -12,7 +12,7 @@ export default function GetNow() {
               title="Display Our Prices On Your Favorite Websites!"
               description="Works on Steam, Twitch, Amazon, YouTube and more!"
               btnName="Get The Gaming Now"
-              reused={true}
+              gamenow
             />
           </div>
         </div>
