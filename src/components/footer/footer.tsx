@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="relative flex justify-center bg-[#15111E] text-white items-center font-oxanium font-bold h-[80vh] bg-[url('footer-bg.jpg')] bg-cover">
       <div className="w-full h-full bg-[#10111D]/90 top-0 absolute"/>
-      <div className="w-[85%] h-full flex py-20 relative gap-10">
+      <div className="w-[1161px] h-full flex py-20 relative gap-10">
         <div className="flex flex-col">
           <div className="flex gap-5 pb-8">
             <div>

@@ -1,7 +1,7 @@
 const NavigationBar = () => {
   return (
-    <nav className="flex justify-center bg-black text-white font-oxanium">
-      <div className="w-[80%] flex justify-between items-center py-5">
+    <nav className="flex justify-center text-white font-oxanium relative border-b-[1px] border-submessage/30">
+      <div className="w-[85%] flex justify-between items-center py-5">
         <div></div>
         <div>
           <ul className="flex items-center font-bold text-base gap-5">
