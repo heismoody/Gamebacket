@@ -1,5 +1,5 @@
+import SectionHeader from "../../../components/sectionHeader";
 import AddToCartCard from "../homeComponents/addToCartCard";
-import SectionHeader from "../homeComponents/sectionHeader";
 
 export default function WeeklyDeals() {
   return (
