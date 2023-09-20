@@ -1,4 +1,4 @@
-import ViewAllBtn from "../../../../components/buttons/viewAllBtn";
+import ViewAllBtn from "../buttons/viewAllBtn";
 
 export default function SectionHeader({...props}:IsectionHeader) {
   return (

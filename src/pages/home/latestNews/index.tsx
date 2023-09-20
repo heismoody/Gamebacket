@@ -1,4 +1,4 @@
-import SectionHeader from "../homeComponents/sectionHeader";
+import SectionHeader from "../../../components/sectionHeader";
 import NewsCard from "./newsCard";
 
 const LatestNews = () => {
