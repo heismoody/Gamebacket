@@ -5,11 +5,11 @@ import { ScrollRestoration } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <>
-        <NavigationBar/>
-          <ScrollRestoration/>
-            <Outlet/>
-        <Footer/>
-    </>
+    <div className="relative">
+      <NavigationBar/>
+        <ScrollRestoration/>
+          <Outlet/>
+      <Footer/>
+    </div>
   )
 }
