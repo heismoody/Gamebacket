@@ -4,6 +4,7 @@ import Homepage from "../pages/home";
 import LoginPage from "../pages/login";
 import SignupPage from "../pages/signup";
 import GameDetail from "../pages/gameDetail";
+import PageNotFound from "../pages/errorPage";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <Homepage/>},
             {path: '/gamedetail', element:<GameDetail/>},
+            {path: '/errorpage', element:<PageNotFound/>},
         ]
     },
     {path: '/login', element: <LoginPage/>},
