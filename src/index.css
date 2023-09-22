@@ -9,7 +9,7 @@
         @apply w-full h-full object-cover
     }
     .navbtn{
-        @apply py-1 px-3 rounded-sm font-bold text-base
+        @apply py-1 px-3 rounded-sm font-bold text-sm
     }
     .descr-1{
         @apply font-inter font-normal flex flex-col gap-2 text-submessage

@@ -1,4 +1,4 @@
-import SectionHeader from "../homeComponents/sectionHeader";
+import SectionHeader from "../../../components/sectionHeader";
 import TrendCard from "./trendCard";
 
 export default function Trending() {
