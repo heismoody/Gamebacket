@@ -2,7 +2,7 @@ import AddToCartBtn from "../../../components/buttons/addToCartBtn";
 
 export default function MainDetails({ ...props }: IgameDetails) {
   return (
-    <div className="flex justify-between w-[1161px]">
+    <div className="flex justify-between w-[1161px] pt-16">
       <div className="w-[30%] h-[400px] relative">
         <img src="callofduty.jpg" alt="" className="imgrender" />
       </div>

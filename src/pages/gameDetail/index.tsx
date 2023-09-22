@@ -10,7 +10,7 @@ export default function GameDetail() {
   return (
     <div className="bg-background">
       <section className="flex flex-col justify-center items-center">
-          <div className="w-full flex justify-center items-center py-16 bg-[url('/callofduty.jpg')] relative">
+          <div className="w-full flex justify-center items-center py-16 bg-[url('/callofduty.jpg')] bg-no-repeat bg-cover relative">
             <div className="absolute top-0 w-full h-full bg-black/80" />
             <div className="absolute top-0 w-full h-full bg-gradient-to-t from-background" />
             <MainDetails actualprice="20,000Tsh" promoprice="50,000 Tsh" />
