@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
 
 export default function TrendCard({ ...props }: Itrendcard) {
@@ -6,7 +7,9 @@ export default function TrendCard({ ...props }: Itrendcard) {
       <img src={props.imageurl} alt="" className="imgrender" />
       <div className="w-full h-full top-0 flex items-end absolute bg-gradient-to-t from-background">
         <div className="flex flex-col gap-y-2 px-5 pb-5">
-          <span className="introheading-2 text-2xl">{props.name}</span>
+          <Link to='/gamedetails'>
+            <span className="introheading-2 text-2xl">{props.name}</span>
+          </Link>
           <div className="flex items-center gap-x-2">
             <span
               className={`descr-1 text-base ${
