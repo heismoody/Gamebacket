@@ -7,7 +7,9 @@ const NavigationBar = () => {
         <div></div>
         <div>
           <ul className="flex items-center font-bold text-base gap-5">
-            <li>Home</li>
+            <Link to='/'>
+              <li>Home</li>
+            </Link>
             <li>About</li>
             <li className="flex items-center gap-1">
               <span>Shop</span>

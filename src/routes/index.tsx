@@ -4,16 +4,16 @@ import Homepage from "../pages/home";
 import LoginPage from "../pages/login";
 import SignupPage from "../pages/signup";
 import GameDetail from "../pages/gameDetail";
-import PageNotFound from "../pages/errorPage";
+import ErrorLayout from "../pages/layout/errorLayout";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout/>,
+        errorElement: <ErrorLayout/>,
         children: [
             {index: true, element: <Homepage/>},
             {path: '/gamedetails', element:<GameDetail/>},
-            {path: '/errorpage', element:<PageNotFound/>},
         ]
     },
     {path: '/login', element: <LoginPage/>},
