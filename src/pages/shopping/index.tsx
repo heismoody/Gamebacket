@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SubmitBtn from "../../components/buttons/submitBtn";
 import SectionHeader from "../../components/sectionHeader";
+import { Link } from "react-router-dom";
 
 export default function ShoppingCart() {
     const [slideup, setSlideup] = useState(false)
@@ -154,9 +155,11 @@ export default function ShoppingCart() {
               <span className="text-xl">Total</span>
               <span>50,000 Tsh</span>
             </div>
-            <button className="introheading-2 py-2 px-4 text-base bg-primary w-full text-black rounded">
-              Proceed to Checkout
-            </button>
+            <Link to='/shoppingcart/completeorder'>
+              <button className="introheading-2 py-2 px-4 text-base bg-primary w-full text-black rounded">
+                Proceed to Checkout
+              </button>
+            </Link>
           </div>
         </div>
       </div>

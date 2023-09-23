@@ -5,7 +5,7 @@ const NavigationBar = () => {
     <nav className="absolute inset-x-0 top-0 z-50 flex justify-center text-white font-oxanium w-full h-fit border-b-[1px] border-submessage/30">
       <div className="w-[90%] flex justify-between items-center py-3 relative">
         <div className="w-[130px]">
-          <img src="download.png" className="imgrender" alt="" />
+          <img src="/download.png" className="imgrender" alt="" />
         </div>
         <div>
           <ul className="flex items-center font-bold text-base gap-5">

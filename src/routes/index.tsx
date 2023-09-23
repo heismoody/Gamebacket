@@ -6,6 +6,7 @@ import SignupPage from "../pages/signup";
 import GameDetail from "../pages/gameDetail";
 import ErrorLayout from "../pages/layout/errorLayout";
 import ShoppingCart from "../pages/shopping";
+import CompleteOrder from "../pages/shopping/completeOrder";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
             {index: true, element: <Homepage/>},
             {path: '/gamedetails', element:<GameDetail/>},
             {path: '/shoppingcart', element:<ShoppingCart/>},
+            {path: '/shoppingcart/completeorder', element:<CompleteOrder/>},
         ]
     },
     {path: '/login', element: <LoginPage/>},
