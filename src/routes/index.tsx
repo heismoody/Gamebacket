@@ -5,6 +5,7 @@ import LoginPage from "../pages/login";
 import SignupPage from "../pages/signup";
 import GameDetail from "../pages/gameDetail";
 import ErrorLayout from "../pages/layout/errorLayout";
+import ShoppingCart from "../pages/shopping";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <Homepage/>},
             {path: '/gamedetails', element:<GameDetail/>},
+            {path: '/shoppingcart', element:<ShoppingCart/>},
         ]
     },
     {path: '/login', element: <LoginPage/>},
