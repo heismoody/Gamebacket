@@ -10,10 +10,10 @@ export default function AddToCartCard({ ...props }: IpreOrderCard) {
             <img
               src={props.imageurl}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-base">{props.name}</span>
+          <span className="introheading-2 text-base hover:text-submessage">{props.name}</span>
           <div className="flex items-center gap-x-2">
             <span
               className={`descr-1 text-base ${
