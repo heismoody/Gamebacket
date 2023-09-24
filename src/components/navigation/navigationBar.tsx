@@ -12,7 +12,9 @@ const NavigationBar = () => {
             <Link to="/">
               <li>Home</li>
             </Link>
-            <li>About</li>
+            <Link to='/about'>
+              <li>About</li>
+            </Link>
             <li className="flex items-center gap-1">
               <span>Shop</span>
               <span>
