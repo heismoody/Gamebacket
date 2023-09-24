@@ -9,7 +9,7 @@ const NavigationBar = () => {
         </div>
         <div>
           <ul className="flex items-center font-bold text-base gap-5">
-            <Link to='/'>
+            <Link to="/">
               <li>Home</li>
             </Link>
             <li>About</li>
@@ -18,36 +18,20 @@ const NavigationBar = () => {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-4 h-4"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                  className="fill-white"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                    clipRule="evenodd"
-                  />
+                  <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                 </svg>
               </span>
             </li>
-            <li>Blog</li>
-            <li className="flex items-center gap-1">
-              <span>Pages</span>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-4 h-4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </li>
+            <Link to="/news">
+              <li>News</li>
+            </Link>
+            <Link to="/contact">
+              <li>Contact Us</li>
+            </Link>
           </ul>
         </div>
         <div className="flex items-center gap-4">
@@ -92,8 +76,10 @@ const NavigationBar = () => {
                 Sign in
               </button>
             </Link>
-            <Link to='/signup'>
-              <button className="navbtn bg-primary text-black border-[1px] border-primary">Sign up</button>
+            <Link to="/signup">
+              <button className="navbtn bg-primary text-black border-[1px] border-primary">
+                Sign up
+              </button>
             </Link>
           </div>
         </div>

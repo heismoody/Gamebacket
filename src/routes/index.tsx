@@ -7,6 +7,9 @@ import GameDetail from "../pages/gameDetail";
 import ErrorLayout from "../pages/layout/errorLayout";
 import ShoppingCart from "../pages/shopping";
 import CompleteOrder from "../pages/shopping/completeOrder";
+import News from "../pages/news";
+import NewsDetails from "../pages/news/newsDetail";
+import ContactUs from "../pages/contact";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +18,9 @@ const router = createBrowserRouter([
         errorElement: <ErrorLayout/>,
         children: [
             {index: true, element: <Homepage/>},
+            {path: '/news', element:<News/>},
+            {path: '/contact', element:<ContactUs/>},
+            {path: '/news/details', element:<NewsDetails/>},
             {path: '/gamedetails', element:<GameDetail/>},
             {path: '/shoppingcart', element:<ShoppingCart/>},
             {path: '/shoppingcart/completeorder', element:<CompleteOrder/>},
