@@ -10,10 +10,10 @@ export default function PreOrderCard({ ...props }: IpreOrderCard) {
             <img
               src={props.imageurl}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-xl">{props.name}</span>
+          <span className="introheading-2 text-xl hover:text-submessage">{props.name}</span>
           <div className="flex items-center gap-x-2">
             <span className={`descr-1 text-base ${props.promoprice ? 'line-through text-xs' : 'text-primary font-medium'}`}>{props.actualprice}</span>
             {

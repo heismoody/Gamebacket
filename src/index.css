@@ -26,4 +26,7 @@
     .viewallbtn{
         @apply navbtn bg-primary py-2 h-fit w-fit px-6 font-oxanium
     }
+    label{
+        @apply text-submessage pb-1 pt-3
+    }
 }

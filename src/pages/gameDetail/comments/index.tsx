@@ -19,34 +19,9 @@ export default function Comment() {
               onFocus={() => setControls(true)}
             />
             {controls && (
-              <div className="flex justify-end gap-x-1 focus:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="w-7 h-7 stroke-2 stroke-red-700"
-                  onClick={()=>setControls(false)}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-7 h-7 stroke-2 stroke-green-600"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+              <div className="flex justify-end items-center gap-x-3 introheading-2 text-sm ">
+                <span className="hover:text-red-500 cursor-pointer" onClick={()=>setControls(false)}>Cancel</span>
+                <span className="hover:text-primary cursor-pointer">Publish</span>
               </div>
             )}
           </div>
