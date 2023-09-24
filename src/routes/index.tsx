@@ -10,6 +10,7 @@ import CompleteOrder from "../pages/shopping/completeOrder";
 import News from "../pages/news";
 import NewsDetails from "../pages/news/newsDetail";
 import ContactUs from "../pages/contact";
+import AboutUs from "../pages/about";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <Homepage/>},
             {path: '/news', element:<News/>},
+            {path: '/about', element:<AboutUs/>},
             {path: '/contact', element:<ContactUs/>},
             {path: '/news/details', element:<NewsDetails/>},
             {path: '/gamedetails', element:<GameDetail/>},
