@@ -1,12 +1,16 @@
-import SectionHeader from "../../components/sectionHeader";
+import PageHeader from "../pageHeader";
 import NewsCard from "../home/latestNews/newsCard";
 
 export default function News() {
   return (
-    <section className="bg-background flex justify-center items-center pt-40">
+    <section className="bg-background flex flex-col justify-center items-center pb-16">
+      <PageHeader
+        image="/hero-news2.jpg"
+        title="Our Latest News"
+        description="Stay up-to-date on the latest news, including new releases, event updates, and exclusive offers. We've got you covered with everything, from the latest game reviews to the hottest new trends. Whether you're a casual gamer or a hardcore enthusiast, we've got something for everyone."
+      />
       <div className="w-[1161px]">
-        <SectionHeader name="NEWS" title="Our Latest News" description="" />
-        <div className="grid grid-cols-3 gap-x-6 gap-y-10 py-14">
+        <div className="grid grid-cols-3 gap-x-6 gap-y-10 py-8">
           <NewsCard
             imageURl="dummypost4.jpg"
             description="September, 2023 No Comments"
