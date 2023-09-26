@@ -6,7 +6,7 @@ export default function ShoppingCart() {
   return (
     <section className="flex justify-center items-center pt-28 bg-background">
       <div className="w-[1161px]">
-        <SectionHeader name="CART" title="Shopping Cart" description="" />
+        <SectionHeader name="CART" title="Shopping Cart" description="" url=""/>
         <div className="flex justify-between py-10">
           <div className="bg-black w-[63%] h-fit flex flex-col justify-center items-center">
             <ShoppingList/>

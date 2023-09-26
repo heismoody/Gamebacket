@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ViewAllBtn from "../buttons/viewAllBtn";
 
 export default function SectionHeader({...props}:IsectionHeader) {
@@ -11,7 +12,9 @@ export default function SectionHeader({...props}:IsectionHeader) {
               {props.description}
             </span>
           </div>
-          <ViewAllBtn/>
+          <Link to={props.url}>
+            <ViewAllBtn/>
+          </Link>
         </div>
     </div>
   )

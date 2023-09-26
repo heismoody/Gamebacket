@@ -9,6 +9,7 @@ const NewRelease = () => {
           name="NEW GAME"
           title="New Releases"
           description="Stay Ahead with Latest and Greatest Games - Explore Releases Now!"
+          url=""
         />
         <div className="grid grid-cols-6 gap-x-[26px] gap-y-8 pt-20">
           <AddToCartCard

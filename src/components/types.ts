@@ -10,3 +10,14 @@ interface Iavatar {
     image: string;
 
 }
+
+interface IheaderDetails{
+    title: string;
+    description: string;
+}
+
+interface IpageHeader{
+    image: string;
+    title: string;
+    description: string;
+}
