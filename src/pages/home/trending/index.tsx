@@ -9,6 +9,7 @@ export default function Trending() {
                 name="TRENDING"
                 title='Trending Now'
                 description='Discover the Latest Trends and Stay Ahead of the Curve.'
+                url=""
             />
             <div className="flex justify-between items-center py-16">
                 <TrendCard

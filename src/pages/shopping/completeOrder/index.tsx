@@ -11,6 +11,7 @@ export default function CompleteOrder() {
           name="CHECKOUT"
           title="Complete Your Order"
           description=""
+          url=""
         />
         <div className="flex justify-between py-10">
           <div className="w-[55%]">

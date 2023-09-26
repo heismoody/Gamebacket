@@ -8,6 +8,7 @@ export default function SimilarGames() {
         name="SIMILAR GAME"
         title="SIMILAR GAMES"
         description="Enjoy games that they are exactly the same as the one viewed"
+        url=""
       />
       <div className="flex justify-between items-center py-10">
         <AddToCartCard
