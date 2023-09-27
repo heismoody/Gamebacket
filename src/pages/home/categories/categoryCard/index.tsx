@@ -1,6 +1,6 @@
 export default function CategoryCard({...props}:IcategoryCard) {
   return (
-    <div className="w-[210px] rounded overflow-hidden relative">
+    <div className="w-[210px] h-[120px] rounded overflow-hidden relative">
       <img
         src={props.imageURL}
         alt=""
