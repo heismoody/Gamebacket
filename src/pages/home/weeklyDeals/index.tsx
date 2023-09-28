@@ -10,6 +10,7 @@ export default function WeeklyDeals() {
                 name='DEALS'
                 title='Weekly Deals'
                 description='Unlock Epic Savings: Explore Fresh Game Deals Every Week!'
+                url=""
             />
             <div className="w-full flex justify-between items-center py-14">
                 <AddToCartCard

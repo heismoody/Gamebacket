@@ -11,6 +11,8 @@ import News from "../pages/news";
 import NewsDetails from "../pages/news/newsDetail";
 import ContactUs from "../pages/contact";
 import AboutUs from "../pages/about";
+import TestimonyPage from "../pages/home/testimonials/testimonyPage";
+import ComingSoon from "../pages/comingSoon";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,8 @@ const router = createBrowserRouter([
             {path: '/news', element:<News/>},
             {path: '/about', element:<AboutUs/>},
             {path: '/contact', element:<ContactUs/>},
+            {path: '/testimonials', element: <TestimonyPage/>},
+            {path: '/comingsoon', element: <ComingSoon/>},
             {path: '/news/details', element:<NewsDetails/>},
             {path: '/gamedetails', element:<GameDetail/>},
             {path: '/shoppingcart', element:<ShoppingCart/>},

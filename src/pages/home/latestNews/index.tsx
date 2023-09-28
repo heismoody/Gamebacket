@@ -9,6 +9,8 @@ const LatestNews = () => {
           name="NEWS"
           title="Our Latest News"
           description="Stay Updated with the Hottest Gaming Buzz and Exclusive Releases!"
+          url="/news"
+          cta
         />
         <div className="py-[70px] flex flex-row justify-between">
           <NewsCard

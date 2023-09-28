@@ -2,7 +2,7 @@ import Avatar from "../../../../components/avatars";
 
 export default function TestimonyCard({...props}:ItestimonyCard) {
   return (
-    <div className="flex flex-col w-[370px] bg-[#07070C]">
+    <div className="flex flex-col w-[370px] bg-[#07070C] h-fit">
       <div className="px-8 py-10">
         <span className="flex text-primary">
           <svg

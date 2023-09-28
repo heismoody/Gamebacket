@@ -1,25 +1,19 @@
 import SubmitBtn from "../../components/buttons/submitBtn";
+import PageHeader from "../pageHeader";
 
 export default function ContactUs() {
   return (
     <section className="bg-background flex flex-col justify-center items-center pb-16">
-      <div className="w-full pt-56 bg-[url('/hero-contact.jpg')] bg-cover bg-no-repeat relative flex justify-center">
-        <div className="bg-black/50 absolute top-0 w-full h-full" />
-        <div className="bg-gradient-to-t from-background absolute top-0 w-full h-full" />
-        <div className="relative introheading-2 w-[1161px]">
-          <span>
-            Contact us
-          </span>
-          <p className="descr-1 text-base py-5">
-            At Gamebacket, we're committed to providing our customers with
-            the best possible support. We believe that customer satisfaction is
-            essential to our success, and we're always looking for ways to
-            improve our service. If you have any suggestions or feedback, please
-            don't hesitate to share it with us.
-          </p>
-        </div>
-      </div>
-      <div className="flex justify-between w-[1161px] pt-3">
+      <PageHeader
+        image="/hero-contact.jpg"
+        title="Contact us"
+        description="At Gamebacket, we're committed to providing our customers with
+        the best possible support. We believe that customer satisfaction is
+        essential to our success, and we're always looking for ways to
+        improve our service. If you have any suggestions or feedback, please
+        don't hesitate to share it with us."
+      />
+      <div className="flex justify-between w-[1161px] pt-8">
         <div className="bg-[url('/bg-catalog.png')] bg-cover bg-no-repeat w-[50%] h-fit flex flex-col gap-y-4 py-10 px-16">
           <div className="flex flex-col">
             <span className="introheading-1 block">CONTACT</span>

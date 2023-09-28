@@ -9,6 +9,7 @@ export default function MostPopular() {
                 name="TOP GAMES"
                 title="Most Popular"
                 description="Most Popular Games, Loved by Gamers Worldwide, Right Here!"
+                url=""
             />
             <div className="w-full flex justify-between items-center py-10">
                 <AddToCartCard
