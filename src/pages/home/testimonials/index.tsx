@@ -10,6 +10,7 @@ export default function Testimonials() {
           title="TESTIMONIALS"
           description="Player Reviews: Hear What Gamers Are Saying About Our Service!"
           url = "/testimonials"
+          cta
         />
         <div className="flex justify-between items-center pt-16 pb-20">
           <TestimonyCard

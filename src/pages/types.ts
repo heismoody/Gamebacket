@@ -11,6 +11,7 @@ interface IsectionHeader {
   description: String;
   reused?: boolean;
   url: string;
+  cta?: boolean;
 }
 
 interface ItestimonyCard {
