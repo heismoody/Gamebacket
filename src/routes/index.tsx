@@ -13,6 +13,8 @@ import ContactUs from "../pages/contact";
 import AboutUs from "../pages/about";
 import TestimonyPage from "../pages/home/testimonials/testimonyPage";
 import ComingSoon from "../pages/comingSoon";
+import OurTeam from "../pages/ourteam";
+import Faq from "../pages/faq";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,8 @@ const router = createBrowserRouter([
             {path: '/about', element:<AboutUs/>},
             {path: '/contact', element:<ContactUs/>},
             {path: '/testimonials', element: <TestimonyPage/>},
+            {path: '/ourteam', element: <OurTeam/>},
+            {path: '/faq', element: <Faq/>},
             {path: '/comingsoon', element: <ComingSoon/>},
             {path: '/news/details', element:<NewsDetails/>},
             {path: '/gamedetails', element:<GameDetail/>},
