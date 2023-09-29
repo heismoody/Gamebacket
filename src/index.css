@@ -29,4 +29,7 @@
     label{
         @apply text-submessage pb-1 pt-3
     }
+    .subnavigation {
+        @apply px-4 py-2 hover:bg-submessage
+    }
 }
