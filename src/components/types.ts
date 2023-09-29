@@ -21,3 +21,7 @@ interface IpageHeader{
     title: string;
     description: string;
 }
+
+interface Iviewallbtn{
+    name: string;
+}
