@@ -67,3 +67,9 @@ interface IquestionCard{
   question: string;
   description: string;
 }
+
+interface IaccessoryCard{
+  image: string;
+  name: string;
+  tags: string;
+}
