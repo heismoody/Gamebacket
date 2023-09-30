@@ -15,6 +15,8 @@ import TestimonyPage from "../pages/home/testimonials/testimonyPage";
 import ComingSoon from "../pages/comingSoon";
 import OurTeam from "../pages/ourteam";
 import Faq from "../pages/faq";
+import Accessories from "../pages/accessories";
+import AccessoryItem from "../pages/accessories/accessoryItem";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +26,8 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <Homepage/>},
             {path: '/news', element:<News/>},
+            {path: '/accessories', element:<Accessories/>},
+            {path: '/accessory/item', element:<AccessoryItem/>},
             {path: '/about', element:<AboutUs/>},
             {path: '/contact', element:<ContactUs/>},
             {path: '/testimonials', element: <TestimonyPage/>},

@@ -9,12 +9,14 @@ import MostPopular from "./mostPopular";
 import Categories from "./categories";
 import ExploreCatalog from "./exploreCatalog";
 import Trending from "./trending";
+import AccessoriesSection from "./accessories";
 
 const Homepage = () => {
   return (
     <section className="flex flex-col items-start justify-center bg-background">
       <LandingPage />
       <Trending />
+      <AccessoriesSection/>
       <MostPopular />
       <ExploreCatalog />
       <Categories />
