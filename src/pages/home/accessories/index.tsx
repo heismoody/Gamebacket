@@ -9,7 +9,8 @@ export default function AccessoriesSection() {
                 name="ACCESSORIES"
                 title="Gaming accessories"
                 description="Fantasize your gaming experience. Right now !"
-                url=""
+                url="/accessories"
+                cta
             />
             <div className="w-full flex justify-between items-center py-10">
                 <AddToCartCard
