@@ -14,7 +14,7 @@ export default function SectionHeader({...props}:IsectionHeader) {
           </div>
           <Link to={props.url}>
             <span className={`${props.cta ? '' : 'hidden'}`}>
-            <ViewAllBtn/>
+            <ViewAllBtn name="View All"/>
             </span>
           </Link>
         </div>

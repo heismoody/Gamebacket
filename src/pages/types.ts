@@ -56,3 +56,20 @@ interface Ilandcard {
   title: string;
   description: string;
 }
+
+interface IteamMemberCard{
+  image: string;
+  name: string;
+  role: string;
+}
+
+interface IquestionCard{
+  question: string;
+  description: string;
+}
+
+interface IaccessoryCard{
+  image: string;
+  name: string;
+  tags: string;
+}

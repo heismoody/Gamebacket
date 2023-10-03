@@ -13,6 +13,11 @@ import ContactUs from "../pages/contact";
 import AboutUs from "../pages/about";
 import TestimonyPage from "../pages/home/testimonials/testimonyPage";
 import ComingSoon from "../pages/comingSoon";
+import OurTeam from "../pages/ourteam";
+import Faq from "../pages/faq";
+import Accessories from "../pages/accessories";
+import AccessoryItem from "../pages/accessories/accessoryItem";
+import CategoryPage from "../pages/categoryPage";
 
 const router = createBrowserRouter([
     {
@@ -22,9 +27,14 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <Homepage/>},
             {path: '/news', element:<News/>},
+            {path: '/accessories', element:<Accessories/>},
+            {path: '/accessory/item', element:<AccessoryItem/>},
             {path: '/about', element:<AboutUs/>},
             {path: '/contact', element:<ContactUs/>},
             {path: '/testimonials', element: <TestimonyPage/>},
+            {path: '/categorypage', element: <CategoryPage/>},
+            {path: '/ourteam', element: <OurTeam/>},
+            {path: '/faq', element: <Faq/>},
             {path: '/comingsoon', element: <ComingSoon/>},
             {path: '/news/details', element:<NewsDetails/>},
             {path: '/gamedetails', element:<GameDetail/>},

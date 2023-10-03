@@ -1,13 +1,13 @@
 import Footer from "../../components/footer/footer";
-import NavigationBar from "../../components/navigation/navigationBar";
+import NavigationBar from "../../components/navigation";
 import PageNotFound from "../errorPage";
 
 export default function ErrorLayout() {
   return (
     <>
-      <NavigationBar/>
-        <PageNotFound/>
-      <Footer/>
+      <NavigationBar />
+      <PageNotFound />
+      <Footer />
     </>
-  )
+  );
 }

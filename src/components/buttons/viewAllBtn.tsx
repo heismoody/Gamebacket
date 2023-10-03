@@ -1,5 +1,5 @@
-export default function ViewAllBtn() {
+export default function ViewAllBtn({...props}:Iviewallbtn) {
   return (
-    <button className="viewallbtn">View All</button>
+    <button className="viewallbtn">{props.name}</button>
   )
 }

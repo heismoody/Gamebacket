@@ -30,7 +30,7 @@ export default function Categories() {
           }
         </div>
         <span onClick={()=> setViewall(!viewall)}>
-          <ViewAllBtn />
+          <ViewAllBtn name={viewall ? 'View Less' : 'View All'} />
         </span>
       </div>
     </section>
