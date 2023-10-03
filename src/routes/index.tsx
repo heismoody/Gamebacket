@@ -17,6 +17,7 @@ import OurTeam from "../pages/ourteam";
 import Faq from "../pages/faq";
 import Accessories from "../pages/accessories";
 import AccessoryItem from "../pages/accessories/accessoryItem";
+import CategoryPage from "../pages/categoryPage";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
             {path: '/about', element:<AboutUs/>},
             {path: '/contact', element:<ContactUs/>},
             {path: '/testimonials', element: <TestimonyPage/>},
+            {path: '/categorypage', element: <CategoryPage/>},
             {path: '/ourteam', element: <OurTeam/>},
             {path: '/faq', element: <Faq/>},
             {path: '/comingsoon', element: <ComingSoon/>},
