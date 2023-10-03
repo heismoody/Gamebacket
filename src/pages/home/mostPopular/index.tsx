@@ -3,7 +3,7 @@ import AddToCartCard from "../homeComponents/addToCartCard";
 
 export default function MostPopular() {
   return (
-    <section className="w-full flex justify-center items-center bg-[url('blur-bg1.png')] bg-no-repeat bg-cover">
+    <section className="w-full flex justify-center items-center bg-[url('/blur-bg1.png')] bg-no-repeat bg-cover">
         <div className="w-[1161px] py-24">
             <SectionHeader
                 name="TOP GAMES"
