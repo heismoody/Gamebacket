@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function CategoryCard({...props}:IcategoryCard) {
   return (
+    <Link to='/categorypage'>
     <div className="w-[210px] h-[120px] rounded overflow-hidden relative">
       <img
         src={props.imageURL}
@@ -10,5 +13,6 @@ export default function CategoryCard({...props}:IcategoryCard) {
         <span className="introheading-2 text-2xl block pb-6">{props.categoryname}</span>
       </div>
     </div>
+    </Link>
   );
 }
