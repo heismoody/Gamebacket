@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function OptionComponent() {
   const [showOption, setShowOption] = useState(false);
@@ -25,18 +25,18 @@ export default function OptionComponent() {
           
         >
           <ul className="py-2 text-sm text-white">
-            <Link to="comingsoon">
-              <li className="subnavigation">Track Order</li>
-            </Link>
-            <Link to="comingsoon">
-              <li className="subnavigation">Tournaments</li>
-            </Link>
-            <Link to="/ourteam">
-              <li className="subnavigation">Our Team</li>
-            </Link>
-            <Link to="/faq">
-              <li className="subnavigation">FAQ</li>
-            </Link>
+            <NavLink to="comingsoon" className={({isActive})=> isActive ? 'text-primary' : ''}>
+              <li className="subnavigation" onClick={()=>{setShowOption(false)}}>Track Order</li>
+            </NavLink>
+            <NavLink to="comingsoon" className={({isActive})=> isActive ? 'text-primary' : ''}>
+              <li className="subnavigation" onClick={()=>{setShowOption(false)}}>Tournaments</li>
+            </NavLink>
+            <NavLink to="/ourteam" className={({isActive})=> isActive ? 'text-primary' : ''}>
+              <li className="subnavigation" onClick={()=>{setShowOption(false)}}>Our Team</li>
+            </NavLink>
+            <NavLink to="/faq" className={({isActive})=> isActive ? 'text-primary' : ''}>
+              <li className="subnavigation" onClick={()=>{setShowOption(false)}}>FAQ</li>
+            </NavLink>
           </ul>
         </div>
       )}
