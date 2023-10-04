@@ -25,3 +25,9 @@ interface IpageHeader{
 interface Iviewallbtn{
     name: string;
 }
+
+interface IslideCartCard{
+    image: string;
+    price: string;
+    name: string;
+}
