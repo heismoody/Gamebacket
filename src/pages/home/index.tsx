@@ -1,9 +1,7 @@
 import { LandingPage } from "./landingPage";
-import NewRelease from "./newRelease";
 import { PreOrders } from "./preOrders";
 import LatestNews from "./latestNews";
 import Testimonials from "./testimonials";
-import GetNow from "./getNow";
 import WeeklyDeals from "./weeklyDeals";
 import MostPopular from "./mostPopular";
 import Categories from "./categories";
