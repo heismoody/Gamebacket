@@ -18,11 +18,9 @@ const Homepage = () => {
       <Trending />
       <AccessoriesSection/>
       <MostPopular />
+      <WeeklyDeals />
       <ExploreCatalog />
       <Categories />
-      <WeeklyDeals />
-      <NewRelease />
-      <GetNow />
       <PreOrders />
       <Testimonials />
       <LatestNews />
