@@ -4,8 +4,8 @@ import PreOrderCard from "./preOrderCard"
 export const PreOrders = () => {
   return (
     <section className="w-full flex justify-center items-center py-20">
-      <div className="w-[1161px] flex justify-between">
-        <div className="flex justify-between w-[66%]">
+      <div className="w-[1161px] grid grid-cols-9 gap-x-9 ">
+        <div className="flex justify-between col-span-6 mobile:col-span-9 mobile:block">
           <PreOrderCard
             imageurl="product-basketb.jpg"
             name="Basketball 2K2"
@@ -22,7 +22,7 @@ export const PreOrders = () => {
             actualprice="40,000 Tsh"
           />
         </div>
-        <div className="w-[31%] p-8 bg-[url('/pattern-pre-order.png')] bg-cover">
+        <div className="col-span-3 mobile:col-span-9 mobile:order-first p-8 bg-[url('/pattern-pre-order.png')] bg-cover">
           <CardDetail
             name="PRE-ORDER"
             title="Pre-Order Games"

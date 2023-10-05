@@ -12,7 +12,7 @@ export default function AccessoriesSection() {
                 url="/accessories"
                 cta
             />
-            <div className="w-full flex justify-between items-center py-10">
+            <div className="w-full grid grid-cols-6 gap-x-[27px] mobile:grid-cols-2 py-10">
                 <AddToCartCard
                     imageurl="https://ae01.alicdn.com/kf/H4017813ab3c04c05ad8ff84fce3a0ba9w/Red-Dragon-Gaming-Keyboard-Pad-Msi-RGB-Computer-Mouse-Pad-Gamer-Desk-Mat-Mousepad-Pc-Gamer.jpg"
                     name="Keyboard Mat"

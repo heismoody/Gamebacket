@@ -1,34 +1,49 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import OptionComponent from "./navigationComponents/optioncomponent";
 import CartIcon from "./navigationComponents/cartIcon";
+import SlideCartCard from "./navigationComponents/slideCartCard";
+import { useState } from "react";
 
 const NavigationBar = () => {
+  const [slideCart, setSlideCart] = useState(false);
   return (
     <nav className="absolute inset-x-0 top-0 z-50 flex justify-center text-white font-oxanium w-full h-fit border-b-[1px] border-submessage/30">
       <div className="w-[90%] flex justify-between items-center py-3 relative">
         <div className="w-[130px]">
           <img src="/download.png" className="imgrender" alt="" />
         </div>
-        <div>
+        <div className="mobile:hidden">
           <ul className="flex items-center font-bold text-base gap-5">
-            <Link to="/">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "text-primary" : "")}
+            >
               <li>Home</li>
-            </Link>
-            <Link to="/accessories">
+            </NavLink>
+            <NavLink
+              to="/accessories"
+              className={({ isActive }) => (isActive ? "text-primary" : "")}
+            >
               <li>Accessories</li>
-            </Link>
-            <Link to="/about">
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "text-primary" : "")}
+            >
               <li>About</li>
-            </Link>
-            <Link to="/contact">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "text-primary" : "")}
+            >
               <li>Contact</li>
-            </Link>
+            </NavLink>
             <li>
-              <OptionComponent/>
+              <OptionComponent />
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mobile:hidden">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +60,14 @@ const NavigationBar = () => {
               />
             </svg>
           </div>
-          <CartIcon/>
+          <div
+            className="relative cursor-pointer"
+            onClick={() => {
+              setSlideCart(true);
+            }}
+          >
+            <CartIcon />
+          </div>
           <div className="flex gap-3">
             <Link to="/login">
               <button className="navbtn border-[1px] border-white/40">
@@ -60,6 +82,60 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
+      {slideCart && (
+        <div className="w-full h-screen bg-black/80 flex justify-end fixed">
+          <div className="w-[30%] bg-background h-full flex flex-col items-center">
+            <div className="w-full flex justify-end items-center py-2 px-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+                className="fill-submessage h-7 w-7 cursor-pointer"
+                onClick={() => {
+                  setSlideCart(false);
+                }}
+              >
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+              </svg>
+            </div>
+            <div className="w-[85%]">
+              <p className="descr-1">SORRY!! No products in the cart.</p>
+            </div>
+            <div className="w-[85%] flex flex-col">
+              <SlideCartCard
+                image="/product-snowball.jpg"
+                name="snowball"
+                price="40000 Tsh"
+              />
+              <SlideCartCard
+                image="/product-snowball.jpg"
+                name="snowball"
+                price="40000 Tsh"
+              />
+              <SlideCartCard
+                image="/product-snowball.jpg"
+                name="snowball"
+                price="40000 Tsh"
+              />
+              <div className="flex justify-center items-center py-5 border-b border-submessage">
+                <span className="text-lg font-semibold">Subtotal: price</span>
+              </div>
+            </div>
+            <div className="w-[85%] flex justify-around py-5">
+              <Link to="/shoppingcart">
+                <button className="bg-secondary introheading-2 text-lg  py-2 px-6 rounded-sm" onClick={()=>{setSlideCart(false)}}>
+                  View Cart
+                </button>
+              </Link>
+              <Link to="/shoppingcart/completeorder">
+                <button className="bg-primary introheading-2 text-lg text-black py-2 px-6 rounded-sm" onClick={()=>{setSlideCart(false)}}>
+                  CheckOut
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

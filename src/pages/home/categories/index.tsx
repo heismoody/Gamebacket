@@ -8,7 +8,7 @@ export default function Categories() {
     <section className="w-full flex justify-center items-center bg-[#1B1B2B] pb-24 pt-40">
       <div className="w-[1161px] flex flex-col items-center">
         <span className="introheading-2 text-[32px]">Categories</span>
-        <div className="w-full grid grid-cols-5 gap-y-6 gap-x-[25px] py-10">
+        <div className="w-full grid grid-cols-5 mobile:grid-cols-2 mobile:gap-2 gap-y-6 gap-x-[25px] py-10">
           <CategoryCard imageURL="category-action.jpg" categoryname="Action" />
           <CategoryCard imageURL="category-adventure.jpg" categoryname="Adventure" />
           <CategoryCard imageURL="trend4.jpg" categoryname="Arcade" />
