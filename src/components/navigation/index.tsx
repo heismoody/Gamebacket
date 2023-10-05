@@ -12,7 +12,7 @@ const NavigationBar = () => {
         <div className="w-[130px]">
           <img src="/download.png" className="imgrender" alt="" />
         </div>
-        <div>
+        <div className="mobile:hidden">
           <ul className="flex items-center font-bold text-base gap-5">
             <NavLink
               to="/"
@@ -43,7 +43,7 @@ const NavigationBar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mobile:hidden">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

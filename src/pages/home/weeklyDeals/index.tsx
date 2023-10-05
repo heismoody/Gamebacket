@@ -12,7 +12,7 @@ export default function WeeklyDeals() {
                 description='Unlock Epic Savings: Explore Fresh Game Deals Every Week!'
                 url=""
             />
-            <div className="w-full flex justify-between items-center py-14">
+            <div className="w-full grid grid-cols-6 gap-x-7 mobile:grid-cols-2  py-14">
                 <AddToCartCard
                     imageurl="trend1.jpg"
                     name="Hello Friend 4"

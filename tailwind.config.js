@@ -16,6 +16,9 @@ export default {
         tertiary: "#d22779",
         submessage: "#95959f",
         background: "#11111B",
+      },
+      screens: {
+        'mobile': {'max':'390px'},
       }
     },
   },

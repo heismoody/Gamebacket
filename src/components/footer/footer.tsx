@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="relative flex justify-center bg-[#15111E] text-white items-center font-oxanium font-bold h-[80vh] bg-[url('/footer-bg.jpg')] bg-cover">
+    <footer className="relative flex justify-center bg-[#15111E] text-white items-center font-oxanium font-bold bg-[url('/footer-bg.jpg')] bg-cover">
       <div className="w-full h-full bg-[#10111D]/90 top-0 absolute"/>
-      <div className="w-[1161px] h-full flex py-20 relative gap-10">
+      <div className="w-[1161px] h-full grid grid-cols-2 mobile:grid-cols-1 py-20 relative gap-10">
         <div className="flex flex-col">
-          <div className="flex gap-5 pb-8">
+          <div className="grid grid-cols-4 mobile:grid-cols-2 pb-8">
             <div>
               <label>About Gameplay</label>
               <ul className="descr-1">
@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
             <div>
               <label>Buy</label>
-              <ul className="descr-1">
+              <ul className="descr-1 gap-y-2">
                 <li>How to buy</li>
                 <li>Game List</li>
                 <li>Collections</li>
@@ -85,7 +85,7 @@ export default function Footer() {
             <span className="text-xs">© 2023 GameBacket. Implemented By Heismoody</span>
           </div>
         </div>
-        <div className="flex flex-col h-fit bg-[url('/bg-newsletter.png')] py-10 px-10">
+        <div className="flex flex-col h-fit bg-[url('/bg-newsletter.png')] py-10 px-10 mobile:order-first">
           <span className="introheading-1">
             NEWSLETTER
           </span>
@@ -94,7 +94,7 @@ export default function Footer() {
             Your first order when you sign up for emails
           </span>
           <span className="text-2xl pb-4 pt-7">Sign up now!</span>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mobile:block">
             <input
               type="email"
               name=""

@@ -3,10 +3,10 @@ import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
 
 export default function PreOrderCard({ ...props }: IpreOrderCard) {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 w-[230px]">
       <Link to='/gamedetails'>
         <div className="flex flex-col gap-3">
-          <div className="w-[230px] rounded overflow-hidden">
+          <div className="w-full rounded overflow-hidden">
             <img
               src={props.imageurl}
               alt=""

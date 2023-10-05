@@ -12,7 +12,7 @@ const LatestNews = () => {
           url="/news"
           cta
         />
-        <div className="py-[70px] flex flex-row justify-between">
+        <div className="py-[70px] flex justify-between mobile:block">
           <NewsCard
             imageURl="dummypost1.jpg"
             description="September, 2023 No Comments"
