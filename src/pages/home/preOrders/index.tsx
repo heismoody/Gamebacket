@@ -4,8 +4,8 @@ import PreOrderCard from "./preOrderCard"
 export const PreOrders = () => {
   return (
     <section className="w-full flex justify-center items-center py-20">
-      <div className="w-[1161px] grid grid-cols-9 gap-x-9 ">
-        <div className="flex justify-between col-span-6 mobile:col-span-9 mobile:block">
+      <div className="w-[1161px] mobile:w-[85%] grid grid-cols-9 gap-x-9 ">
+        <div className="flex justify-between col-span-6 mobile:mobilepreordercard ">
           <PreOrderCard
             imageurl="product-basketb.jpg"
             name="Basketball 2K2"

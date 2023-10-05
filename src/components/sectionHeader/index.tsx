@@ -7,7 +7,7 @@ export default function SectionHeader({...props}:IsectionHeader) {
         <span className={`introheading-1 ${props.reused ? "text-primary" : ''}`}>{props.name}</span>
         <div className="flex justify-between mobile:block pt-3">
           <div className="flex items-center mobile:block gap-6">
-            <span className="introheading-2">{props.title}</span>
+            <span className="introheading-2 mobile:text-3xl">{props.title}</span>
             <span className="descr-1">
               {props.description}
             </span>

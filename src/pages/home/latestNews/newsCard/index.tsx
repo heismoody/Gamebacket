@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NewsCard({ ...props }: InewsCard) {
   return (
-    <div className="w-[370px]">
+    <div className="w-[370px] mobile:w-full">
       <Link to='/news/details'>
         <div className="w-full overflow-hidden rounded">
           <img
