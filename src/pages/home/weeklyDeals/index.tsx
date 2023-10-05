@@ -4,7 +4,7 @@ import AddToCartCard from "../homeComponents/addToCartCard";
 export default function WeeklyDeals() {
   return (
     <section className="w-full flex justify-center items-center bg-[url('/pattern-secondary.png')] py-20">
-        <div className="w-[1161px]">
+        <div className="w-[1161px] mobile:w-[90%]">
             <SectionHeader
                 reused
                 name='DEALS'
@@ -12,7 +12,7 @@ export default function WeeklyDeals() {
                 description='Unlock Epic Savings: Explore Fresh Game Deals Every Week!'
                 url=""
             />
-            <div className="w-full grid grid-cols-6 gap-x-7 mobile:grid-cols-2  py-14">
+            <div className="w-full grid grid-cols-6 gap-x-7 py-14 mobile:grid-cols-2 mobile:gap-7 ">
                 <AddToCartCard
                     imageurl="trend1.jpg"
                     name="Hello Friend 4"

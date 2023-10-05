@@ -4,7 +4,7 @@ import TrendCard from "./trendCard";
 export default function Trending() {
   return (
     <section className="w-full flex justify-center items-center bg-[#07070c] py-20">
-        <div className="w-[1161px]">
+        <div className="w-[1161px] mobile:w-[90%]">
             <SectionHeader
                 name="TRENDING"
                 title='Trending Now'

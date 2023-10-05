@@ -1,6 +1,6 @@
 export default function LandingCard({...props}:Ilandcard) {
   return (
-    <div className="bg-[url('/bg-card.png')] flex justify-center items-center w-[265px] mobile:w-[180px] rounded-sm">
+    <div className="bg-[url('/bg-card.png')] flex justify-center items-center w-[265px] mobile:w-[160px] rounded-sm">
         <div className="flex flex-col items-center gap-y-2 py-4">
             <div className="h-10 w-10">
                 <img src={props.iconurl} alt="" className="imgrender"/>

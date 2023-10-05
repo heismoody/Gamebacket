@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="relative flex justify-center bg-[#15111E] text-white items-center font-oxanium font-bold bg-[url('/footer-bg.jpg')] bg-cover">
       <div className="w-full h-full bg-[#10111D]/90 top-0 absolute"/>
-      <div className="w-[1161px] h-full grid grid-cols-2 mobile:grid-cols-1 py-20 relative gap-10">
+      <div className="w-[1161px] mobile:w-[90%] h-full grid grid-cols-2 mobile:grid-cols-1 py-20 relative gap-10">
         <div className="flex flex-col">
           <div className="grid grid-cols-4 mobile:grid-cols-2 pb-8">
             <div>
@@ -100,7 +100,7 @@ export default function Footer() {
               name=""
               placeholder="Email address"
               id=""
-              className="py-2 text-black/80 outline-none pl-3 pr-28"
+              className="py-2 text-black/80 outline-none pl-3 pr-28 mobile:w-full"
               required
             />
             <button className="navbtn bg-primary text-black py-2 px-6">
