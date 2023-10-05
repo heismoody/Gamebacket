@@ -4,9 +4,9 @@ export const LandingPage = () => {
   return (
   <section className="w-full flex justify-center pt-24 pb-10 relative bg-[url('/hero-home.jpg')] bg-cover bg-no-repeat">
     <div className="absolute w-full h-full top-0 bg-black/50"/>
-    <div className="w-[1161px] relative">
-      <div className="w-[55%] py-24">
-        <h1 className="introheading-2 text-[64px] leading-[80px]">
+    <div className="w-[1161px] mobile:w-[90%] relative">
+      <div className="w-[55%] mobile:w-full py-24">
+        <h1 className="introheading-2 text-[64px] leading-[80px] mobile:text-5xl">
           FIFA 23 Release Date Announced!
         </h1>
         <p className="descr-1 text-base py-4">

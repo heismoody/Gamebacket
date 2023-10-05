@@ -4,7 +4,7 @@ import NewsCard from "./newsCard";
 const LatestNews = () => {
   return (
     <section className="flex justify-center items-center w-full bg-[url('blur-bg2.png')] bg-cover">
-      <div className="w-[1161px]">
+      <div className="w-[1161px] mobile:w-[90%]">
         <SectionHeader
           name="NEWS"
           title="Our Latest News"
@@ -12,7 +12,7 @@ const LatestNews = () => {
           url="/news"
           cta
         />
-        <div className="py-[70px] flex justify-between mobile:block">
+        <div className="py-[70px] flex justify-between items-center mobile:flex-col">
           <NewsCard
             imageURl="dummypost1.jpg"
             description="September, 2023 No Comments"

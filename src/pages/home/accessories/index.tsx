@@ -4,7 +4,7 @@ import AddToCartCard from "../homeComponents/addToCartCard";
 export default function AccessoriesSection() {
   return (
     <section className="w-full flex justify-center items-center">
-        <div className="w-[1161px] py-24">
+        <div className="w-[1161px] mobile:w-[90%] py-24">
             <SectionHeader
                 name="ACCESSORIES"
                 title="Gaming accessories"
@@ -12,7 +12,7 @@ export default function AccessoriesSection() {
                 url="/accessories"
                 cta
             />
-            <div className="w-full grid grid-cols-6 gap-x-[27px] mobile:grid-cols-2 py-10">
+            <div className="w-full grid grid-cols-6 gap-x-[27px] py-10 mobile:grid-cols-2 mobile:gap-7">
                 <AddToCartCard
                     imageurl="https://ae01.alicdn.com/kf/H4017813ab3c04c05ad8ff84fce3a0ba9w/Red-Dragon-Gaming-Keyboard-Pad-Msi-RGB-Computer-Mouse-Pad-Gamer-Desk-Mat-Mousepad-Pc-Gamer.jpg"
                     name="Keyboard Mat"

@@ -4,7 +4,7 @@ import TestimonyCard from "./testimonyCard";
 export default function Testimonials() {
   return (
     <section className="w-full flex justify-center items-center pb-20">
-      <div className="w-[1161px]">
+      <div className="w-[1161px] mobile:w-[90%]">
         <SectionHeader
           name="TESTIMONIALS"
           title="TESTIMONIALS"
@@ -12,7 +12,7 @@ export default function Testimonials() {
           url = "/testimonials"
           cta
         />
-        <div className="flex justify-between items-center mobile:block pt-16 pb-20">
+        <div className="flex justify-between items-center mobile:flex-col mobile:gap-y-5 pt-16 pb-20">
           <TestimonyCard
             title="Super quick delivery!"
             description="It's rare to find such a perfect combination of speed and affordability in online gaming purchases. Kudos to this platform."
