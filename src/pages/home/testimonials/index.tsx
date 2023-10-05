@@ -12,7 +12,7 @@ export default function Testimonials() {
           url = "/testimonials"
           cta
         />
-        <div className="flex justify-between items-center pt-16 pb-20">
+        <div className="flex justify-between items-center mobile:block pt-16 pb-20">
           <TestimonyCard
             title="Super quick delivery!"
             description="It's rare to find such a perfect combination of speed and affordability in online gaming purchases. Kudos to this platform."

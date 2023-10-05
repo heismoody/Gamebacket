@@ -13,7 +13,7 @@ export const LandingPage = () => {
           Gear up, fellow gamers! FIFA 23's drop date is locked in. Get ready to score big on your favorite platforms, and let the soccer showdown begin!
         </p>
       </div>
-      <div className="w-full gap-x-8 grid grid-cols-4">
+      <div className="w-full gap-x-8 grid grid-cols-4 mobile:grid-cols-2 mobile:gap-2">
         <LandingCard
           iconurl="cloud_download.png"
           title="Quick Delivered"

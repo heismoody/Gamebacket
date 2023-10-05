@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function NewsCard({ ...props }: InewsCard) {
   return (
-    <div>
+    <div className="w-[370px]">
       <Link to='/news/details'>
-        <div className="w-[370px] overflow-hidden rounded">
+        <div className="w-full overflow-hidden rounded">
           <img
             src={props.imageURl}
             alt=""
-            className="w-full h-full object-cover"
+            className="imgrender"
           />
         </div>
         <div>

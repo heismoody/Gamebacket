@@ -11,7 +11,7 @@ export default function Trending() {
                 description='Discover the Latest Trends and Stay Ahead of the Curve.'
                 url=""
             />
-            <div className="flex justify-between items-center py-16">
+            <div className="grid grid-cols-4 gap-x-[34px] mobile:gap-2 mobile:grid-cols-2 py-16">
                 <TrendCard
                     imageurl="trend1.jpg"
                     name="Warrior Queen"
