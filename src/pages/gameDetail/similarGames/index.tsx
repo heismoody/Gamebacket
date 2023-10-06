@@ -10,7 +10,7 @@ export default function SimilarGames() {
         description="Enjoy games that they are exactly the same as the one viewed"
         url=""
       />
-      <div className="flex justify-between items-center py-10">
+      <div className="flex justify-between items-center py-10 mobile:grid mobile:grid-cols-2 mobile:gap-4">
         <AddToCartCard
           imageurl="trend1.jpg"
           name="Hello Friend 4"

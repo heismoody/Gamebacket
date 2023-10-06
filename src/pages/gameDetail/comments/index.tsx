@@ -6,11 +6,11 @@ export default function Comment() {
   const [controls, setControls] = useState(false);
   return (
     <section className="flex justify-center">
-      <div className="w-[95%]">
+      <div className="w-[95%] mobile:w-full mobile:py-4">
         <span className="introheading-2 text-xl py-3 block">100 Comments</span>
         <div className="flex justify-between py-4">
           <Avatar image="testimonials-3.jpg" />
-          <div className="w-[83%]">
+          <div className="w-[83%] mobile:w-[80%]">
             <textarea
               name="comment"
               id=""

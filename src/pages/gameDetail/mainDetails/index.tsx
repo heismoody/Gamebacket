@@ -3,15 +3,15 @@ import GameSearch from "../search";
 
 export default function MainDetails({ ...props }: IgameDetails) {
   return (
-    <div className="w-[1161px] pt-10">
-      <div className="w-full flex justify-end relative">
+    <div className="w-[1161px] mobile:w-[90%] pt-10">
+      <div className="w-full flex justify-end relative mobile:justify-center">
         <GameSearch/>
       </div>
-      <div className="w-full flex justify-between">
-        <div className="w-[30%] h-[400px] relative">
+      <div className="w-full flex justify-between mobile:flex-col">
+        <div className="w-[30%] h-[400px] relative mobile:hidden">
           <img src="callofduty.jpg" alt="" className="imgrender" />
         </div>
-        <div className="flex flex-col gap-y-5 w-[65%] relative">
+        <div className="flex flex-col gap-y-5 w-[65%] mobile:w-full relative">
           <div className="flex justify-between">
             <div className="flex gap-x-3">
               <svg
@@ -43,7 +43,7 @@ export default function MainDetails({ ...props }: IgameDetails) {
               AVERAGE PLAYTIME: 10 HOURS
             </span>
           </div>
-          <span className="introheading-2">Call of Warlords</span>
+          <span className="introheading-2 mobile:text-4xl">Call of Warlords</span>
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-x-2">
               <span
@@ -67,7 +67,7 @@ export default function MainDetails({ ...props }: IgameDetails) {
           </div>
           <div>
             <span className="introheading-2 text-3xl">About</span>
-            <p className="descr-1">
+            <p className="descr-1 mobile:text-justify mobile:py-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate harum officia vel assumenda aliquam ipsam dignissimos
               sit quas atque eaque, ipsum nesciunt debitis delectus perferendis
@@ -77,7 +77,7 @@ export default function MainDetails({ ...props }: IgameDetails) {
               Earum.
             </p>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between mobile:flex-col">
             <div className="flex flex-col gap-y-2">
               <span className="flex items-center gap-x-2">
                 <span className="introheading-2 text-sm">Release date:</span>
@@ -156,7 +156,7 @@ export default function MainDetails({ ...props }: IgameDetails) {
                   </svg>
                 </span>
               </span>
-              <span className="flex flex-col border border-submessage rounded px-3">
+              <span className="flex flex-col border border-submessage rounded px-3 w-fit">
                 <span className="introheading-2 text-xs text-submessage">
                   Save To
                 </span>
