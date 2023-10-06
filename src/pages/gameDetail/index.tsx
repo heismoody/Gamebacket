@@ -15,24 +15,24 @@ export default function GameDetail() {
           <div className="absolute top-0 w-full h-full bg-gradient-to-t from-background" />
           <MainDetails actualprice="20,000Tsh" promoprice="50,000 Tsh" />
         </div>
-        <div className="w-[1161px]">
-          <div className="flex justify-between">
-            <div className="w-[40%]">
-              <div className="descr-1 flex-row border border-submessage w-fit rounded py-2 px-3 divide-x-[1px] divide-submessage font-semibold cursor-pointer">
+        <div className="w-[1161px] mobile:w-[90%]">
+          <div className="flex justify-between mobile:flex-col">
+            <div className="w-[40%] mobile:w-full">
+              <div className="descr-1 flex-row border border-submessage w-fit mobile:w-full rounded py-2 px-3 divide-x-[1px] divide-submessage font-semibold cursor-pointer">
                 <span
-                  className={`px-4 ${toggle === 1 ? "text-primary" : ""}`}
+                  className={`px-4 mobile:px-0 ${toggle === 1 ? "text-primary" : ""}`}
                   onClick={() => setToggle(1)}
                 >
                   Requirements
                 </span>
                 <span
-                  className={`px-5 ${toggle === 2 ? "text-primary" : ""}`}
+                  className={`px-5 mobile:px-1 ${toggle === 2 ? "text-primary" : ""}`}
                   onClick={() => setToggle(2)}
                 >
                   Developers
                 </span>
                 <span
-                  className={`px-5 ${toggle === 3 ? "text-primary" : ""}`}
+                  className={`px-5 mobile:px-1 ${toggle === 3 ? "text-primary" : ""}`}
                   onClick={() => setToggle(3)}
                 >
                   Reviews (0)
@@ -42,9 +42,9 @@ export default function GameDetail() {
               {toggle === 2 && <DeveloperList />}
               {toggle === 3 && <Comment />}
             </div>
-            <div className="w-[55%]">
+            <div className="w-[55%] mobile:w-full">
               <video
-                className="h-[50vh] w-full object-cover"
+                className="h-[50vh] mobile:h-[25vh] w-full object-cover"
                 src="nfsp.mp4"
                 autoPlay
                 loop

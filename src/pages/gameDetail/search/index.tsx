@@ -1,6 +1,6 @@
 export default function GameSearch() {
   return (
-    <div className="flex items-center gap-x-2 border px-2 rounded-md mb-6 border-submessage">
+    <div className="flex items-center justify-between gap-x-2 border px-2 rounded-md mb-6 border-submessage mobile:w-full">
       <input type="text" name="" id="" className="py-1 bg-transparent border-none px-2 text-white outline-none placeholder:placeholdersearch" placeholder="Search Desired Game"/>
       <svg
         xmlns="http://www.w3.org/2000/svg"
