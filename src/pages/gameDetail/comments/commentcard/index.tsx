@@ -7,7 +7,7 @@ export default function CommentCard() {
   return (
     <div className="flex justify-between py-4 border border-white/5 px-4 rounded-xl">
       <Avatar image="testimonials-3.jpg" />
-      <div className="flex flex-col w-[83%] descr-1">
+      <div className="flex flex-col w-[83%] mobile:w-[80%] descr-1">
         <span className="flex justify-between font-semibold text-white/80 text-sm">
           <span>Username</span>
           <span className="text-white/50">1 day ago</span>

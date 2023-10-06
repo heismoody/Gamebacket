@@ -3,7 +3,7 @@ import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
 
 export default function AddToCartCard({ ...props }: IpreOrderCard) {
   return (
-    <div className="flex flex-col gap-2 w-[170px] mobile:w-[150px]">
+    <div className="flex flex-col gap-2 w-[170px] mobile:w-full">
       <Link to="/gamedetails">
         <div className="flex flex-col gap-2">
           <div className="w-full h-[170px] mobile:h-[150px] rounded overflow-hidden">
@@ -13,19 +13,19 @@ export default function AddToCartCard({ ...props }: IpreOrderCard) {
               className="imgrender hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-base hover:text-submessage">{props.name}</span>
+          <span className="introheading-2 text-base hover:text-submessage mobile:line-clamp-1">{props.name}</span>
           <div className="flex items-center gap-x-2">
             <span
-              className={`descr-1 text-base ${
+              className={`descr-1 text-base mobile:text-xs ${
                 props.promoprice
-                  ? "line-through text-xs"
+                  ? "line-through text-xs mobile:text-[10px]"
                   : "text-primary font-medium"
               }`}
             >
               {props.actualprice}
             </span>
             {props.promoprice && (
-              <span className="descr-1 text-base font-medium underline text-primary">
+              <span className="descr-1 text-base mobile:text-xs font-medium underline text-primary">
                 {props.promoprice}
               </span>
             )}
