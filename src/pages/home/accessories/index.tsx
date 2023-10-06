@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import SectionHeader from "../../../components/sectionHeader";
 import AddToCartCard from "../homeComponents/addToCartCard";
+import ViewAllBtn from "../../../components/buttons/viewAllBtn";
 
 export default function AccessoriesSection() {
   return (
     <section className="w-full flex justify-center items-center">
-        <div className="w-[1161px] mobile:w-[90%] py-24">
+        <div className="w-[1161px] flex flex-col items-center mobile:w-[90%] py-24">
             <SectionHeader
                 name="ACCESSORIES"
                 title="Gaming accessories"
@@ -44,6 +46,11 @@ export default function AccessoriesSection() {
                     actualprice="40,000 Tsh"
                 />
             </div>
+            <Link to="/accessories">
+            <span className="hidden mobile:block">
+            <ViewAllBtn name="View All"/>
+            </span>
+          </Link>
         </div>
     </section>
   )

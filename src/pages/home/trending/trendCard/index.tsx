@@ -4,7 +4,7 @@ import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
 export default function TrendCard({ ...props }: Itrendcard) {
   return (
     <Link to="/gamedetails">
-      <div className="w-[265px] mobile:w-[160px] overflow-hidden rounded-sm relative group">
+      <div className="w-[265px] mobile:w-full overflow-hidden rounded-sm relative group">
         <img
           src={props.imageurl}
           alt=""

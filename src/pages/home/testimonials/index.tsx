@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
 import SectionHeader from "../../../components/sectionHeader";
 import TestimonyCard from "./testimonyCard";
+import ViewAllBtn from "../../../components/buttons/viewAllBtn";
 
 export default function Testimonials() {
   return (
     <section className="w-full flex justify-center items-center pb-20">
-      <div className="w-[1161px] mobile:w-[90%]">
+      <div className="w-[1161px] mobile:w-[90%] flex flex-col items-center">
         <SectionHeader
           name="TESTIMONIALS"
           title="TESTIMONIALS"
           description="Player Reviews: Hear What Gamers Are Saying About Our Service!"
-          url = "/testimonials"
+          url="/testimonials"
           cta
         />
-        <div className="flex justify-between items-center mobile:flex-col mobile:gap-y-5 pt-16 pb-20">
+        <div className="flex justify-between items-center pt-16 pb-20 w-full mobile:flex-col mobile:gap-y-5">
           <TestimonyCard
             title="Super quick delivery!"
             description="It's rare to find such a perfect combination of speed and affordability in online gaming purchases. Kudos to this platform."
@@ -35,6 +37,11 @@ export default function Testimonials() {
             imageurl="testimonials-3.jpg"
           />
         </div>
+        <Link to="/testimonials">
+          <span className="hidden mobile:block">
+            <ViewAllBtn name="View All" />
+          </span>
+        </Link>
       </div>
     </section>
   );

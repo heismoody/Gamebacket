@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import SectionHeader from "../../../components/sectionHeader";
 import NewsCard from "./newsCard";
+import ViewAllBtn from "../../../components/buttons/viewAllBtn";
 
 const LatestNews = () => {
   return (
     <section className="flex justify-center items-center w-full bg-[url('blur-bg2.png')] bg-cover">
-      <div className="w-[1161px] mobile:w-[90%]">
+      <div className="w-[1161px] mobile:w-[90%] flex flex-col items-center mobile:py-10">
         <SectionHeader
           name="NEWS"
           title="Our Latest News"
@@ -12,7 +14,7 @@ const LatestNews = () => {
           url="/news"
           cta
         />
-        <div className="py-[70px] flex justify-between items-center mobile:flex-col">
+        <div className="py-[70px] flex justify-between items-center w-full mobile:gap-y-5 mobile:flex-col mobile:py-10">
           <NewsCard
             imageURl="dummypost1.jpg"
             description="September, 2023 No Comments"
@@ -29,6 +31,11 @@ const LatestNews = () => {
             title="Community Spotlight: Meet Our Top Gamers!"
           />
         </div>
+        <Link to="/news">
+          <span className="hidden mobile:block">
+            <ViewAllBtn name="View All" />
+          </span>
+        </Link>
       </div>
     </section>
   );
