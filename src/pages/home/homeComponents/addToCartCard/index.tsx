@@ -13,19 +13,19 @@ export default function AddToCartCard({ ...props }: IpreOrderCard) {
               className="imgrender hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-base hover:text-submessage">{props.name}</span>
+          <span className="introheading-2 text-base hover:text-submessage mobile:line-clamp-1">{props.name}</span>
           <div className="flex items-center gap-x-2">
             <span
-              className={`descr-1 text-base ${
+              className={`descr-1 text-base mobile:text-xs ${
                 props.promoprice
-                  ? "line-through text-xs"
+                  ? "line-through text-xs mobile:text-[10px]"
                   : "text-primary font-medium"
               }`}
             >
               {props.actualprice}
             </span>
             {props.promoprice && (
-              <span className="descr-1 text-base font-medium underline text-primary">
+              <span className="descr-1 text-base mobile:text-xs font-medium underline text-primary">
                 {props.promoprice}
               </span>
             )}

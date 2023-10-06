@@ -12,7 +12,7 @@ export default function TrendCard({ ...props }: Itrendcard) {
         />
         <div className="w-full h-full top-0 flex items-end absolute bg-gradient-to-t from-background">
           <div className="flex flex-col gap-y-2 px-5 pb-5">
-            <span className="introheading-2 text-2xl mobile:text-base hover:text-submessage">
+            <span className="introheading-2 text-2xl mobile:text-base hover:text-submessage mobile:line-clamp-1">
               {props.name}
             </span>
             <Link to='/shoppingcart'>
@@ -20,7 +20,7 @@ export default function TrendCard({ ...props }: Itrendcard) {
                 <span
                   className={`descr-1 text-base mobile:text-xs ${
                     props.promoprice
-                      ? "line-through text-xs"
+                      ? "line-through text-xs mobile:text-[8px]"
                       : "text-primary font-medium"
                   }`}
                 >
