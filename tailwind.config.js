@@ -18,7 +18,7 @@ export default {
         background: "#11111B",
       },
       screens: {
-        'mobile': {'max':'414px'},
+        'mobile': {'max':'450px'},
       }
     },
   },
