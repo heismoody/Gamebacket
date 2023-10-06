@@ -20,14 +20,14 @@ export default function TrendCard({ ...props }: Itrendcard) {
                 <span
                   className={`descr-1 text-base mobile:text-xs ${
                     props.promoprice
-                      ? "line-through text-xs mobile:text-[8px]"
+                      ? "line-through text-xs mobile:text-[7px]"
                       : "text-primary font-medium"
                   }`}
                 >
                   {props.actualprice}
                 </span>
                 {props.promoprice && (
-                  <span className="descr-1 text-base mobile:text-xs font-medium underline text-primary">
+                  <span className="descr-1 text-base mobile:text-[10px] font-medium underline text-primary">
                     {props.promoprice}
                   </span>
                 )}
