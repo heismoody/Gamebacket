@@ -6,19 +6,19 @@ import YourOrder from "../shoppingComponents/yourOrder";
 export default function CompleteOrder() {
   return (
     <section className="flex justify-center items-center pt-28 bg-background">
-      <div className="w-[1161px]">
+      <div className="w-[1161px] mobile:w-[90%]">
         <SectionHeader
           name="CHECKOUT"
           title="Complete Your Order"
           description=""
           url=""
         />
-        <div className="flex justify-between py-10">
-          <div className="w-[55%]">
-            <div className="bg-black w-full px-10 py-5">
+        <div className="flex justify-between py-10 mobile:py-3 mobile:flex-col">
+          <div className="w-[55%] mobile:w-full">
+            <div className="bg-black w-full px-10 mobile:px-3 py-5">
               <BillingDetails/>
             </div>
-            <div className="bg-black w-full px-10 py-3 my-5">
+            <div className="bg-black w-full px-10 mobile:px-3 py-3 my-5">
               <label htmlFor="additionalnote">Order Additional Note:</label>
               <textarea
                 name="additionalnote"
@@ -28,11 +28,11 @@ export default function CompleteOrder() {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center w-[43%]">
-            <div className="bg-black w-full px-10 py-3">
+          <div className="flex flex-col items-center w-[43%] mobile:w-full">
+            <div className="bg-black w-full px-10 mobile:px-3 py-3">
               <YourOrder/>
             </div>
-            <div className="bg-black w-full px-10 py-5 mt-4">
+            <div className="bg-black w-full px-10 mobile:px-3 py-5 mt-4">
               <PaymentDetails/>
             </div>
           </div>
