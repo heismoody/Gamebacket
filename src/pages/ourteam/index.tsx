@@ -9,8 +9,8 @@ export default function OurTeam() {
         title="Our Team"
         description="Enoying that much? Here is a team of passionate gamers, front-end and back-end developers, and a skilled coordinator, working together to create and share the best gaming experiences for everyone."
       />
-      <div className="w-[1161px]">
-        <div className="flex justify-between items-center py-10">
+      <div className="w-[1161px] mobile:w-full">
+        <div className="flex justify-between items-center py-10 mobile:flex-col mobile:gap-y-5 ">
             <TeamMemberCard
                 image="alex.jpg"
                 name="Alex Greatman"

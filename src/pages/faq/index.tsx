@@ -9,12 +9,12 @@ export default function Faq() {
         title="Frequently Asked Questions"
         description="Here, you'll find answers to some of the most common questions we receive about our products, services, and community. We're committed to keeping them up-to-date and accurate. If you have a question that isn't answered here, please don't hesitate to contact us. We're always happy to help!"
       />
-      <div className="flex flex-col w-[1161px] gap-y-10 pt-8">
-        <div className="flex justify-between">
-          <div className="w-[35%] h-[450px] ">
+      <div className="flex flex-col w-[1161px] mobile:w-[90%] gap-y-10 pt-8">
+        <div className="flex justify-between mobile:flex-col">
+          <div className="w-[35%] mobile:w-full h-[450px] mobile:h-[30vh] overflow-hidden ">
             <img src="about1.jpg" className="imagerender" alt="" />
           </div>
-          <div className="w-[62%]">
+          <div className="w-[62%] mobile:w-full">
             <ul>
               <li>
                 <QuestionCard
@@ -67,8 +67,8 @@ export default function Faq() {
             </ul>
           </div>
         </div>
-        <div className="flex justify-between">
-          <div className="w-[62%]">
+        <div className="flex justify-between mobile:flex-col">
+          <div className="w-[62%] mobile:w-full">
             <ul>
               <li>
                 <QuestionCard
@@ -120,7 +120,7 @@ export default function Faq() {
               </li>
             </ul>
           </div>
-          <div className="w-[35%] h-[350px] overflow-hidden">
+          <div className="w-[35%] mobile:w-full h-[350px] mobile:h-[30vh] overflow-hidden mobile:order-first">
             <img src="faq2.jpg" className="imagerender" alt="" />
           </div>
         </div>
