@@ -9,8 +9,8 @@ export default function Accessories() {
         title="Accessories"
         description="At Game Point, we know that the right gaming accessories can make all the difference in your gaming experience. That's why we offer a wide range of high-quality accessories from top brands, all designed to help you take your gaming to the next level."
       />
-      <div className="w-[1161px]">
-        <div className="grid grid-cols-3 gap-x-6 gap-y-10 py-8">
+      <div className="w-[1161px] mobile:w-[90%]">
+        <div className="grid grid-cols-3 gap-x-6 gap-y-10 py-8 mobile:grid-cols-1">
             <CategoryCard
                 image="dummypost8.jpg"
                 name="CONTROLLERS"

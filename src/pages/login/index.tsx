@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 export default function LoginPage() {
   return (
     <section className="flex justify-center bg-[#11111b]">
-      <div className="w-[50%] h-screen relative">
+      <div className="w-[50%] h-screen relative mobile:hidden">
         <div className="w-full h-full top-0 absolute bg-black/50" />
         <img src="login-sect.jpg" className="imgrender" alt="" />
       </div>
-      <div className="w-[50%] flex justify-center items-center h-screen bg-[url('/login-bg.png')] bg-cover bg-no-repeat">
-        <div className="w-[70%]">
+      <div className="w-[50%] mobile:w-full flex justify-center items-center h-screen bg-[url('/login-bg.png')] bg-cover bg-no-repeat">
+        <div className="w-[70%] mobile:w-[80%]">
           <div className="flex flex-col items-center gap-5">
             <span className="introheading-1 pb-5 block">LOGIN</span>
-            <span className={`introheading-2 leading-[3.75rem]`}>
+            <span className={`introheading-2 leading-[3.75rem] mobile:text-3xl`}>
               Customer Login
             </span>
             <div className="flex flex-col items-center gap-y-5 w-full">

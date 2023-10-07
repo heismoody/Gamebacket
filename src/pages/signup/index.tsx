@@ -6,14 +6,14 @@ export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
   return (
     <section className="flex justify-center bg-[#11111b]">
-      <div className="w-[50%] h-screen relative">
+      <div className="w-[50%] h-screen relative mobile:hidden">
         <div className="w-full h-full top-0 absolute bg-black/50" />
         <img src="login-sect.jpg" className="imgrender" alt="" />
       </div>
-      <div className="w-[50%] flex justify-center  h-screen bg-[url('/login-bg.png')] bg-cover bg-no-repeat">
+      <div className="w-[50%] mobile:w-full flex justify-center  h-screen bg-[url('/login-bg.png')] bg-cover bg-no-repeat">
         <div className="w-[80%] py-6">
-          <div className="flex flex-col gap-5">
-            <span className={`introheading-2 leading-[3.75rem]`}>
+          <div className="flex flex-col gap-5 mobile:items-center">
+            <span className={`introheading-2 leading-[3.75rem] mobile:text-3xl`}>
               Customer SignUp
             </span>
             <div className="flex flex-col gap-y-5 w-full introheading-2 text-base">
@@ -58,6 +58,7 @@ export default function SignupPage() {
                       <input
                         type="checkbox"
                         name="altno"
+                        className="outline-none"
                         id=""
                         onClick={() => {
                           setAltCheck(!altcheck);
@@ -83,8 +84,8 @@ export default function SignupPage() {
                   required
                   id=""
                 />
-                <div className="w-full flex justify-between">
-                  <div className="w-[47%]">
+                <div className="w-full flex justify-between mobile:flex-col">
+                  <div className="w-[47%] mobile:w-full">
                     <label htmlFor="fname">Password:</label>
                     <div className="flex items-center bg-white">
                       <input
@@ -120,7 +121,7 @@ export default function SignupPage() {
                       }
                     </div>
                   </div>
-                  <div className="w-[47%]">
+                  <div className="w-[47%] mobile:w-full">
                     <label htmlFor="lname">Confirm Password:</label>
                     <div className="flex items-center bg-white">
                       <input
