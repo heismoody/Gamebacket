@@ -11,15 +11,15 @@ export default function AboutUs() {
         satisfaction guarantee. We're passionate about gaming, and we're
         committed to providing our customers with the best possible experience."
       />
-      <div className="w-[1161px]">
+      <div className="w-[1161px] mobile:w-[90%]">
         <div className="flex flex-col">
           <span
-            className={`introheading-2 leading-[3.2rem] w-[85%] text-[44px] py-7`}
+            className={`introheading-2 leading-[3.2rem] w-[85%] mobile:w-full text-[44px] mobile:text-3xl py-7`}
           >
             We're on a mission to enable everyone to discover the joy of gaming
           </span>
-          <div className="flex justify-between">
-            <p className="descr-1 w-[50%]">
+          <div className="flex justify-between mobile:flex-col mobile:gap-y-5">
+            <p className="descr-1 w-[50%] mobile:w-full">
               GameBacket is committed to making gaming accessible and enjoyable
               for everyone. We believe that gaming is a powerful force that can
               bring people together, create new experiences, and inspire
@@ -41,15 +41,15 @@ export default function AboutUs() {
                 throughout the year.
               </span>
             </p>
-            <div className="w-[48%] h-[500px]">
+            <div className="w-[48%] mobile:w-full h-[500px] mobile:h-[30vh] mobile:order-first">
               <img src="about1.jpg" className="imgrender" alt="" />
             </div>
           </div>
-          <div className="flex justify-between items-end">
-            <div className="w-[48%] h-[350px]">
+          <div className="flex justify-between items-end mobile:flex-col mobile:gap-y-8 mobile:pt-10">
+            <div className="w-[48%] mobile:w-full h-[350px] mobile:h-[25vh]">
               <img src="story-sect.jpg" className="imgrender" alt="" />
             </div>
-            <div className="w-[50%] flex flex-col gap-y-3">
+            <div className="w-[50%] mobile:w-full flex flex-col gap-y-3">
               <span className="introheading-1">OUR STORY</span>
               <span className={`introheading-2 leading-[3.75rem]`}>
                 Our story

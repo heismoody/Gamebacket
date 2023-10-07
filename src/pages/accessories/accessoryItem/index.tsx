@@ -9,8 +9,8 @@ export default function AccessoryItem() {
         title="Controllers"
         description="At Game Point, we know that the right gaming accessories can make all the difference in your gaming experience. That's why we offer a wide range of high-quality accessories from top brands, all designed to help you take your gaming to the next level."
       />
-      <div className="w-[1161px]">
-        <div className="grid grid-cols-6 gap-x-6 gap-y-10 py-8">
+      <div className="w-[1161px] mobile:w-[90%]">
+        <div className="grid grid-cols-6 gap-x-6 gap-y-10 py-8 mobile:grid-cols-2">
           <AddToCartCard
             imageurl="/product-racing.jpg"
             name="PS4 PAD"

@@ -13,9 +13,9 @@ export default function ContactUs() {
         improve our service. If you have any suggestions or feedback, please
         don't hesitate to share it with us."
       />
-      <div className="flex justify-between w-[1161px] pt-8">
-        <div className="bg-[url('/bg-catalog.png')] bg-cover bg-no-repeat w-[50%] h-fit flex flex-col gap-y-4 py-10 px-16">
-          <div className="flex flex-col">
+      <div className="flex justify-between w-[1161px] mobile:w-[90%] mobile:flex-col pt-8">
+        <div className="bg-[url('/bg-catalog.png')] bg-cover bg-no-repeat w-[50%] mobile:w-full h-fit flex flex-col gap-y-4 py-10 px-16 mobile:px-10">
+          <div className="flex flex-col ">
             <span className="introheading-1 block">CONTACT</span>
             <span className={`introheading-2 leading-[3.75rem]`}>
               Get In Touch
@@ -84,7 +84,7 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] mobile:w-full mobile:py-10">
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15848.078088822445!2d39.051794171948764!3d-6.767473481959649!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stz!4v1695544926993!5m2!1sen!2stz"
