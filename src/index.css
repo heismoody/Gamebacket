@@ -36,7 +36,7 @@
         @apply introheading-2 text-sm text-submessage
     }
     .mobilepreordercard{
-        @apply flex-col items-center col-span-9 py-5 gap-y-5
+        @apply grid grid-cols-2 col-span-9 py-5 gap-5
     }
     .mobileshopnow{
         @apply text-xs py-1 px-2

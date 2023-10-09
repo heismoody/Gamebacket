@@ -9,8 +9,8 @@ export default function TestimonyPage() {
         title="Testimonials"
         description="Hear what our customers have to say about Game Basket! We're proud of the positive feedback we receive from our customers, and we're always looking for ways to improve our products and services.These reviews are a great way to learn more about our products and services, and to see what other customers think of us."
       />
-      <div className="w-[1161px]">
-        <div className="grid grid-cols-3 gap-x-6 gap-y-10 py-8">
+      <div className="w-[1161px] mobile:w-[90%]">
+        <div className="grid grid-cols-3 mobile:grid-cols-1 gap-x-6 gap-y-10 py-8">
           <TestimonyCard
             title="Super quick delivery!"
             description="It's rare to find such a perfect combination of speed and affordability in online gaming purchases. Kudos to this platform."
