@@ -11,8 +11,8 @@ export default function CategoryPage() {
 
         Experience the thrill of the race with stunning visuals, realistic physics, and pulse-pounding action. From high-octane supercars to off-road rally machines, we have the perfect racing game for everyone. Whether you're a seasoned pro or a casual gamer, our racing games will keep you coming back for more. So get ready to fire up your engines and hit the track!"
       />
-      <div className="flex flex-col w-[1161px] gap-y-10 pt-8">
-        <div className="grid grid-cols-6  gap-x-[26px] gap-y-8 ">
+      <div className="flex flex-col w-[1161px] mobile:w-[90%] gap-y-10 pt-8">
+        <div className="grid grid-cols-6 mobile:grid-cols-2  gap-x-[26px] gap-y-8 ">
           <AddToCartCard
             imageurl="product-flights.jpg"
             name="Plane Simulation"
