@@ -9,8 +9,8 @@ export default function News() {
         title="Our Latest News"
         description="Stay up-to-date on the latest news, including new releases, event updates, and exclusive offers. We've got you covered with everything, from the latest game reviews to the hottest new trends. Whether you're a casual gamer or a hardcore enthusiast, we've got something for everyone."
       />
-      <div className="w-[1161px]">
-        <div className="grid grid-cols-3 gap-x-6 gap-y-10 py-8">
+      <div className="w-[1161px] mobile:w-[90%]">
+        <div className="grid grid-cols-3 mobile:grid-cols-1 gap-x-6 gap-y-10 py-8">
           <NewsCard
             imageURl="dummypost4.jpg"
             description="September, 2023 No Comments"

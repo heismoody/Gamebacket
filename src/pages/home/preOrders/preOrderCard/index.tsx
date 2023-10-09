@@ -13,7 +13,7 @@ export default function PreOrderCard({ ...props }: IpreOrderCard) {
               className="w-full h-full object-cover hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-xl hover:text-submessage">{props.name}</span>
+          <span className="introheading-2 text-xl hover:text-submessage line-clamp-1">{props.name}</span>
           <div className="flex items-center gap-x-2">
             <span className={`descr-1 text-base ${props.promoprice ? 'line-through text-xs' : 'text-primary font-medium'}`}>{props.actualprice}</span>
             {
