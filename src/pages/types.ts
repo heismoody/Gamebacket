@@ -23,9 +23,9 @@ interface ItestimonyCard {
 }
 
 interface IpreOrderCard {
-  imageurl: string;
-  name: string;
-  actualprice: string;
+  imageurl?: string;
+  name?: string;
+  actualprice?: string;
   promoprice?: string;
 }
 
