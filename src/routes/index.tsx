@@ -18,6 +18,7 @@ import Faq from "../pages/faq";
 import Accessories from "../pages/accessories";
 import AccessoryItem from "../pages/accessories/accessoryItem";
 import CategoryPage from "../pages/categoryPage";
+import AdminPanel from "../pages/adminpanel";
 
 const router = createBrowserRouter([
     {
@@ -44,6 +45,7 @@ const router = createBrowserRouter([
     },
     {path: '/login', element: <LoginPage/>},
     {path: '/signup', element: <SignupPage/>},
+    {path: '/adminpanel', element: <AdminPanel/>}
 ])
 
 export default router

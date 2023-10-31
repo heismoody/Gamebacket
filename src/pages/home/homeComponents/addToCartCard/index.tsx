@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
-import { IpreOrderCard } from "../../../types";
 import useCartStore from "../../../../provider/store";
 
 export default function AddToCartCard({ ...props }:IpreOrderCard) {

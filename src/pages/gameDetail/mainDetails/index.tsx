@@ -111,7 +111,7 @@ export default function MainDetails({ ...props }: IgameDetails) {
               </span>
             </div>
             <div className="flex flex-col gap-y-2">
-              <span className="flex items-center gap-x-2">
+              <span className="flex items-center justify-between gap-x-2">
                 <span className="introheading-2 text-sm">Rating:</span>
                 <span className="flex items-center gap-x-[2px]">
                   <svg
@@ -156,23 +156,20 @@ export default function MainDetails({ ...props }: IgameDetails) {
                   </svg>
                 </span>
               </span>
-              <span className="flex flex-col border border-submessage rounded px-3 w-fit">
-                <span className="introheading-2 text-xs text-submessage">
-                  Save To
-                </span>
-                <span className="descr-1  text-white flex-row items-center justify-between">
-                  <span className="text-xl font-medium">Collection</span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 576 512"
-                      className="fill-primary w-5 h-5"
-                    >
-                      <path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32v96V384c0 35.3 28.7 64 64 64H256V384H64V160H256V96H64V32zM288 192c0 17.7 14.3 32 32 32H544c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H445.3c-8.5 0-16.6-3.4-22.6-9.4L409.4 9.4c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32V192zm0 288c0 17.7 14.3 32 32 32H544c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32H445.3c-8.5 0-16.6-3.4-22.6-9.4l-13.3-13.3c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32V480z" />
-                    </svg>
-                  </span>
-                </span>
+              <span className="flex gap-2">
+                <button className="viewallbtn text-xs h-full px-2 mobile:mobileshopnow">
+                  Save In Collection
+                </button>
+                <button className="viewallbtn text-xs px-2 mobile:mobileshopnow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 576 512"
+                    className="fill-black w-5 h-5"
+                  >
+                    <path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32v96V384c0 35.3 28.7 64 64 64H256V384H64V160H256V96H64V32zM288 192c0 17.7 14.3 32 32 32H544c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H445.3c-8.5 0-16.6-3.4-22.6-9.4L409.4 9.4c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32V192zm0 288c0 17.7 14.3 32 32 32H544c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32H445.3c-8.5 0-16.6-3.4-22.6-9.4l-13.3-13.3c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32V480z" />
+                  </svg>
+                </button>
               </span>
             </div>
           </div>
