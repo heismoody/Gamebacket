@@ -3,10 +3,12 @@ import OptionComponent from "./navigationComponents/optioncomponent";
 import CartIcon from "./navigationComponents/cartIcon";
 import SlideCartCard from "./navigationComponents/slideCartCard";
 import { useState } from "react";
+import useCartStore from "../../provider/store";
 
 const NavigationBar = () => {
   const [slideCart, setSlideCart] = useState(false);
   const [mobileMenu, setCloseMobileMenu] = useState(false);
+  const product = useCartStore(s => s.product)
   return (
     <nav className="absolute inset-x-0 top-0 z-50 flex justify-center text-white font-oxanium w-full h-fit border-b-[1px] border-submessage/30">
       <div className="w-[90%] flex justify-between items-center py-3 relative">
@@ -232,21 +234,16 @@ const NavigationBar = () => {
               <p className="descr-1">SORRY!! No products in the cart.</p>
             </div>
             <div className="w-[85%] flex flex-col">
-              <SlideCartCard
-                image="/product-snowball.jpg"
+              {
+                product.map(()=> (
+                  <SlideCartCard
+                image="product-snowball.jpg"
                 name="snowball"
                 price="40000 Tsh"
               />
-              <SlideCartCard
-                image="/product-snowball.jpg"
-                name="snowball"
-                price="40000 Tsh"
-              />
-              <SlideCartCard
-                image="/product-snowball.jpg"
-                name="snowball"
-                price="40000 Tsh"
-              />
+                ))
+              }
+              
               <div className="flex justify-center items-center py-5 border-b border-submessage">
                 <span className="text-lg font-semibold">Subtotal: price</span>
               </div>
