@@ -5,19 +5,19 @@ export default function TopProductCard({ ...props }: ItopProductCard) {
         <span className="introheading-2 text-sm hover:text-submessage mobile:line-clamp-1">
           {props.no}
         </span>
-        <div className="w-[60px] rounded overflow-hidden">
+        <div className="w-[50px] rounded overflow-hidden">
           <img src={props.imageurl} alt="" className="imgrender" />
         </div>
         <div className="flex flex-col">
-          <span className="introheading-2 text-lg hover:text-submessage mobile:line-clamp-1">
+          <span className="introheading-2 text-base hover:text-submessage mobile:line-clamp-1">
             {props.title}
           </span>
-          <span className="descr-1 text-sm mobile:text-xs font-medium text-primary">
+          <span className="descr-1 text-xs mobile:text-xs font-medium text-primary">
             {props.price}
           </span>
         </div>
       </div>
-      <span className="flex justify-center items-center w-5 h-5 p-3.5 rounded-full introheading-2 text-sm bg-red-900">
+      <span className="flex justify-center items-center w-5 h-5 p-3.5 rounded-full introheading-2 text-sm bg-submessage/20">
         3
       </span>
     </div>

@@ -1,12 +1,12 @@
-import { BarChart } from "../../../../components/charts/barChart";
+import { LineChart } from "../../../../components/charts/linechart";
 
-export default function SalesStatistics() {
+export default function UsersStats() {
   return (
-    <div className="p-7 rounded-lg bg-background">
+    <div className="px-5 py-4 rounded-lg bg-background">
       <div className="flex justify-between">
-        <span className="introheading-2 text-xl">Sales Statistics</span>
+        <span className="introheading-2 text-lg">Users Stats</span>
         <span className="descr-1 flex-row gap-2 items-center text-xs border border-submessage rounded-md px-2">
-          monthly
+          weekly
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
@@ -18,8 +18,8 @@ export default function SalesStatistics() {
         </span>
       </div>
       <div>
-        <BarChart/>
+       <LineChart/> 
       </div>
     </div>
-  );
+  )
 }
