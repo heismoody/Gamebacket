@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
-import useCartStore from "../../../../provider/store";
 
 export default function AddToCartCard({ ...props }:IpreOrderCard) {
-  const addtocart = useCartStore(s => s.addtocart)
 
   return (
     <div className="flex flex-col gap-2 w-[170px] mobile:w-full">
@@ -37,15 +35,7 @@ export default function AddToCartCard({ ...props }:IpreOrderCard) {
       </Link>
       <div className="flex justify-between items-center">
         <AddToCartBtn />
-        <span className="flex justify-center items-center p-2 rounded-full bg-primary"
-        onClick={()=>{
-          if (props.actualprice != undefined && props.imageurl != undefined){
-            const cartproduct: string[] = []
-            cartproduct.push(props.actualprice, props.imageurl);
-            addtocart(cartproduct)
-          }
-        }}
-        >
+        <span className="flex justify-center items-center p-2 rounded-full bg-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
