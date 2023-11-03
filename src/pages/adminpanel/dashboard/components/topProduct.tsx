@@ -20,13 +20,13 @@ export default function TopProduct() {
       <div>
         <ul className="flex flex-col gap-4 py-4">
           <li>
-            <TopProductCard no={1} title="Fifa 23" price="40,000 Tsh" imageurl="product-fife.jpg" />
+            <TopProductCard no={1} title="Fifa 23" price="40,000 Tsh" imageurl="../product-fife.jpg" />
           </li>
           <li>
-            <TopProductCard no={2} title="Call of Duty" price="50,000 Tsh" imageurl="product-warlord.jpg" />
+            <TopProductCard no={2} title="Call of Duty" price="50,000 Tsh" imageurl="../product-warlord.jpg" />
           </li>
           <li>
-            <TopProductCard no={3} title="Need For Speed Payback" price="60,000 Tsh" imageurl="product-racing.jpg" />
+            <TopProductCard no={3} title="Need For Speed Payback" price="60,000 Tsh" imageurl="../product-racing.jpg" />
           </li>
         </ul>
       </div>

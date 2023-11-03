@@ -1,4 +1,3 @@
-import DashboardHeader from "./components/dashboardHeader";
 import Overview from "./components/overview";
 import SalesStatistics from "./components/salesStatistics";
 import TopProduct from "./components/topProduct";
@@ -6,8 +5,7 @@ import UsersStats from "./components/usersStats";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-center py-4">
-      <DashboardHeader />
+    <div className="flex flex-col items-center w-full">
       <div className="flex justify-between w-[95%] py-3">
         <div className="w-[60%]">
           <Overview />
