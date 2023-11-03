@@ -19,33 +19,42 @@ import Accessories from "../pages/accessories";
 import AccessoryItem from "../pages/accessories/accessoryItem";
 import CategoryPage from "../pages/categoryPage";
 import AdminPanel from "../pages/adminpanel";
+import Dashboard from "../pages/adminpanel/dashboard";
+import OrderList from "../pages/adminpanel/orders";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Layout/>,
-        errorElement: <ErrorLayout/>,
-        children: [
-            {index: true, element: <Homepage/>},
-            {path: '/news', element:<News/>},
-            {path: '/accessories', element:<Accessories/>},
-            {path: '/accessory/item', element:<AccessoryItem/>},
-            {path: '/about', element:<AboutUs/>},
-            {path: '/contact', element:<ContactUs/>},
-            {path: '/testimonials', element: <TestimonyPage/>},
-            {path: '/categorypage', element: <CategoryPage/>},
-            {path: '/ourteam', element: <OurTeam/>},
-            {path: '/faq', element: <Faq/>},
-            {path: '/comingsoon', element: <ComingSoon/>},
-            {path: '/news/details', element:<NewsDetails/>},
-            {path: '/gamedetails', element:<GameDetail/>},
-            {path: '/shoppingcart', element:<ShoppingCart/>},
-            {path: '/shoppingcart/completeorder', element:<CompleteOrder/>},
-        ]
-    },
-    {path: '/login', element: <LoginPage/>},
-    {path: '/signup', element: <SignupPage/>},
-    {path: '/adminpanel', element: <AdminPanel/>}
-])
+  {
+    path: "/",
+    element: <Layout />,
+    errorElement: <ErrorLayout />,
+    children: [
+      { index: true, element: <Homepage /> },
+      { path: "/news", element: <News /> },
+      { path: "/accessories", element: <Accessories /> },
+      { path: "/accessory/item", element: <AccessoryItem /> },
+      { path: "/about", element: <AboutUs /> },
+      { path: "/contact", element: <ContactUs /> },
+      { path: "/testimonials", element: <TestimonyPage /> },
+      { path: "/categorypage", element: <CategoryPage /> },
+      { path: "/ourteam", element: <OurTeam /> },
+      { path: "/faq", element: <Faq /> },
+      { path: "/comingsoon", element: <ComingSoon /> },
+      { path: "/news/details", element: <NewsDetails /> },
+      { path: "/gamedetails", element: <GameDetail /> },
+      { path: "/shoppingcart", element: <ShoppingCart /> },
+      { path: "/shoppingcart/completeorder", element: <CompleteOrder /> },
+    ],
+  },
+  { path: "/login", element: <LoginPage /> },
+  { path: "/signup", element: <SignupPage /> },
+  {
+    path: "/adminpanel/",
+    element: <AdminPanel />,
+    children: [
+      { index: true, element: <Dashboard /> },
+      { path: "orders", element: <OrderList /> },
+    ],
+  },
+]);
 
-export default router
+export default router;
