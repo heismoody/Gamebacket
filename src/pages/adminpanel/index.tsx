@@ -12,7 +12,12 @@ export default function AdminPanel() {
         <div className="w-full">
           <ul className="flex justify-center text-white font-bold text-base">
             <div className="flex flex-col items-end w-full">
-              <NavLink to="./" className={({isActive}) => (isActive?"w-[90%] bg-slate-900 rounded-l-2xl":"w-[90%]")}>
+              <NavLink
+                to="./"
+                className={({ isActive }) =>
+                  isActive ? "w-[90%] bg-slate-900 rounded-l-2xl" : "w-[90%]"
+                }
+              >
                 <li className="flex items-center gap-10 px-8 py-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +30,12 @@ export default function AdminPanel() {
                   Dashboard
                 </li>
               </NavLink>
-              <NavLink to="orders" className={({isActive}) => (isActive?"w-[90%] bg-slate-900 rounded-l-2xl":"w-[90%]")}>
+              <NavLink
+                to="orders"
+                className={({ isActive }) =>
+                  isActive ? "w-[90%] bg-slate-900 rounded-l-2xl" : "w-[90%]"
+                }
+              >
                 <li className="flex items-center gap-10  px-8 py-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -38,28 +48,42 @@ export default function AdminPanel() {
                   Orders
                 </li>
               </NavLink>
-              <li className="flex items-center gap-10 w-[90%] px-8 py-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 640 512"
-                  className="w-5 h-5 fill-white"
-                >
-                  <path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z" />
-                </svg>
-                Products
-              </li>
-              <li className="flex items-center gap-10 w-[90%] px-8 py-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 448 512"
-                  className="w-5 h-5 fill-white"
-                >
-                  <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-                </svg>
-                Users
-              </li>
+              <NavLink
+                to="products"
+                className={({ isActive }) =>
+                  isActive ? "w-[90%] bg-slate-900 rounded-l-2xl" : "w-[90%]"
+                }
+              >
+                <li className="flex items-center gap-10 w-[90%] px-8 py-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 640 512"
+                    className="w-5 h-5 fill-white"
+                  >
+                    <path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z" />
+                  </svg>
+                  Products
+                </li>
+              </NavLink>
+              <NavLink
+                to="users"
+                className={({ isActive }) =>
+                  isActive ? "w-[90%] bg-slate-900 rounded-l-2xl" : "w-[90%]"
+                }
+              >
+                <li className="flex items-center gap-10 w-[90%] px-8 py-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                    className="w-5 h-5 fill-white"
+                  >
+                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                  </svg>
+                  Users
+                </li>
+              </NavLink>
               <li className="flex items-center gap-10 w-[90%] px-8 py-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

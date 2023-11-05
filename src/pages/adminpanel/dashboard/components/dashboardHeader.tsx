@@ -36,7 +36,7 @@ export default function DashboardHeader() {
           <span className="absolute bg-red-900 w-2.5 h-2.5 -right-0.5 -top-0.5 rounded-full"/>
         </span>
         <div className="w-[40px] overflow-hidden rounded-full">
-          <img src="testimonials-3.jpg" alt="" className="imgrender"/>
+          <img src="../testimonials-3.jpg" alt="" className="imgrender"/>
         </div>
       </div>
     </div>
