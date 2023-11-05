@@ -21,6 +21,8 @@ import CategoryPage from "../pages/categoryPage";
 import AdminPanel from "../pages/adminpanel";
 import Dashboard from "../pages/adminpanel/dashboard";
 import OrderList from "../pages/adminpanel/orders";
+import Products from "../pages/adminpanel/products";
+import Users from "../pages/adminpanel/users";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +55,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Dashboard /> },
       { path: "orders", element: <OrderList /> },
+      { path: "products", element: <Products /> },
+      { path: "users", element: <Users /> },
     ],
   },
 ]);
