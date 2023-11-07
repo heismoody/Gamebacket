@@ -2,8 +2,11 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function AddGame() {
-  const { register } = useForm();
+  const { register, handleSubmit } = useForm();
   const [discount, setDiscount] = useState(true);
+  const onSubmit = () => {
+    alert('There is data wanted to be submited we are under Construction')
+  }
   return (
     <div className="border-[1px] border-black/30 rounded introheading-2 text-black text-sm p-4">
       <div className="border-[1px] border-black/30 rounded-lg flex items-center mb-5">
@@ -28,12 +31,12 @@ export default function AddGame() {
           />
         </svg>
       </div>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="gamename" className="text-black/80 pt-0">
           Game Title
         </label>
         <input
-          {...register("gameName")}
+          {...register("gamename")}
           type="text"
           name="gamename"
           placeholder="Call of Duty 4"
@@ -56,7 +59,7 @@ export default function AddGame() {
                 Actual Price
               </label>
               <input
-                {...register("platforms")}
+                {...register("actualprice")}
                 type="number"
                 name="actualprice"
                 placeholder="40000"
@@ -80,7 +83,7 @@ export default function AddGame() {
                 />
               </label>
               <input
-                {...register("platforms")}
+                {...register("discountprice")}
                 type="number"
                 name="discountprice"
                 placeholder="20000"
@@ -93,43 +96,43 @@ export default function AddGame() {
         <label className="text-black/80 rounded border-[1px] border-black/40 p-3 mt-5">
           <div className="flex gap-3">
             <div>
-              <label htmlFor="actualprice" className="text-black/80 pt-0">
+              <label htmlFor="playtime" className="text-black/80 pt-0">
                 Playtime (HRS)
               </label>
               <input
-                {...register("platforms")}
+                {...register("playtime")}
                 type="number"
-                name="actualprice"
+                name="playtime"
                 placeholder="40"
                 className="productinput"
               />
             </div>
             <div>
               <label
-                htmlFor="discountprice"
+                htmlFor="agerating"
                 className="text-black/80 pt-0 flex justify-between"
               >
                 Age (Yrs)
               </label>
               <input
-                {...register("platforms")}
+                {...register("agerating")}
                 type="number"
-                name="discountprice"
+                name="agerating"
                 placeholder="20"
                 className="productinput"
               />
             </div>
             <div>
               <label
-                htmlFor="discountprice"
+                htmlFor="releasedate"
                 className="text-black/80 pt-0 flex justify-between"
               >
                 Release Date
               </label>
               <input
-                {...register("platforms")}
+                {...register("releasedate")}
                 type="date"
-                name="discountprice"
+                name="releasedate"
                 placeholder="20000"
                 className="productinput"
               />
@@ -227,7 +230,7 @@ export default function AddGame() {
           Genre
         </label>
         <input
-          {...register("platforms")}
+          {...register("genre")}
           type="text"
           name="genre"
           placeholder="Action, Shooter"
@@ -237,7 +240,7 @@ export default function AddGame() {
           Website
         </label>
         <input
-          {...register("platforms")}
+          {...register("website")}
           type="text"
           name="website"
           placeholder="https://www.callofduty.com/modernwarfare2"
@@ -247,26 +250,28 @@ export default function AddGame() {
           Tags
         </label>
         <input
-          {...register("platforms")}
+          {...register("tags")}
           type="text"
           name="tags"
           placeholder="Singleplayer, Steam Achievements, Multiplayer"
           className="productinput"
         />
-        <label htmlFor="prodescription" className="text-black/80">
+        <label htmlFor="about" className="text-black/80">
           About
         </label>
         <textarea
-          name="prodescription"
+        {...register('about')}
+          name="about"
           id=""
           className="productinput h-[20vh] resize-none"
           placeholder="Enter Accessory Description"
         />
-        <label htmlFor="prodescription" className="text-black/80">
+        <label htmlFor="requirements" className="text-black/80">
           Requirements
         </label>
         <textarea
-          name="prodescription"
+        {...register('requrement')}
+          name="requirements"
           id=""
           className="productinput h-[20vh] resize-none"
           placeholder="Enter Accessory Description"

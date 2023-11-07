@@ -1,7 +1,13 @@
+import { useForm } from "react-hook-form";
+
 export default function AddAccessories() {
+  const { register, handleSubmit } = useForm();
+  const onsubmit = () => {
+    alert('We are still under construction you can not submit')
+  }
   return (
     <div className="border-[1px] border-black/30 rounded introheading-2 text-black text-sm p-4">
-      <form action="" method="post">
+      <form onSubmit={handleSubmit(onsubmit)}>
         <label className="text-black/80 pt-0">Add Images</label>
         <div className="flex items-center justify-center w-full">
           <label
@@ -89,40 +95,40 @@ export default function AddAccessories() {
             </span>
           </span>
         </div>
-        <label htmlFor="proname" className="text-black/80 pt-0">
+        <label htmlFor="productname" className="text-black/80 pt-0">
           Product Name
         </label>
         <input
+          {...register("productname")}
           type="text"
-          name="proname"
           placeholder="Ps4 Slim Pro"
           className="productinput"
         />
         <label htmlFor="category" className="text-black/80">
           Category
         </label>
-        <select name="category" id="" className="productinput">
-          <option value="1">Action</option>
-          <option value="2">Adventure</option>
-          <option value="3">Arcade</option>
-          <option value="4">RPG</option>
-          <option value="5">Fighting</option>
-          <option value="6">Shooter</option>
+        <select {...register("category")} id="" className="productinput">
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="arcade">Arcade</option>
+          <option value="rpg">RPG</option>
+          <option value="fighting">Fighting</option>
+          <option value="shooter">Shooter</option>
         </select>
-        <label htmlFor="proname" className="text-black/80">
+        <label htmlFor="price" className="text-black/80">
           Price
         </label>
         <input
+          {...register("price")}
           type="number"
-          name="proname"
           placeholder="40000"
           className="productinput"
         />
-        <label htmlFor="prodescription" className="text-black/80">
+        <label htmlFor="description" className="text-black/80">
           Description
         </label>
         <textarea
-          name="prodescription"
+          {...register("description")}
           id=""
           className="productinput h-[20vh] resize-none"
           placeholder="Enter Accessory Description"
