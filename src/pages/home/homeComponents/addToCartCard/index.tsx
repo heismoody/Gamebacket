@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
+import useCartStore from "../../../../store/store";
 
-export default function AddToCartCard({ ...props }:IpreOrderCard) {
-
+export default function AddToCartCard({ ...props }: IpreOrderCard) {
+  const add = useCartStore((s) => s.add);
   return (
     <div className="flex flex-col gap-2 w-[170px] mobile:w-full">
       <Link to="/gamedetails">
@@ -14,7 +15,9 @@ export default function AddToCartCard({ ...props }:IpreOrderCard) {
               className="imgrender hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-base hover:text-submessage mobile:line-clamp-1">{props.name}</span>
+          <span className="introheading-2 text-base hover:text-submessage mobile:line-clamp-1">
+            {props.name}
+          </span>
           <div className="flex items-center gap-x-2">
             <span
               className={`descr-1 text-base mobile:text-xs ${
@@ -35,7 +38,10 @@ export default function AddToCartCard({ ...props }:IpreOrderCard) {
       </Link>
       <div className="flex justify-between items-center">
         <AddToCartBtn />
-        <span className="flex justify-center items-center p-2 rounded-full bg-primary">
+        <span
+          className="flex justify-center items-center p-2 rounded-full bg-primary"
+          onClick={() => add({id:Date.now(), title:props.name, image:props.imageurl})}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
