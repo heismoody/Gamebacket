@@ -62,7 +62,7 @@ export default function MainDetails({ ...props }: IgameDetails) {
               )}
             </div>
             <div>
-              <AddToCartBtn />
+              <AddToCartBtn id={Date.now()} title="call of warlods" image="callofduty.jpg"/>
             </div>
           </div>
           <div>

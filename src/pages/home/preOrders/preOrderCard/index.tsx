@@ -24,7 +24,7 @@ export default function PreOrderCard({ ...props }: IpreOrderCard) {
         </div>
       </Link>
       <div className="flex justify-between items-center">
-        <AddToCartBtn />
+        <AddToCartBtn id={Date.now()} title={props.name} image={props.imageurl} />
         <span className="flex justify-center items-center p-2 rounded-full bg-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
