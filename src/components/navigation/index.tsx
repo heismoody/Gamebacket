@@ -253,7 +253,7 @@ const NavigationBar = () => {
               </div>
             </div>
             <div className="w-[85%] flex justify-around py-5">
-              <Link to="/shoppingcart">
+              <Link to="/shoppingcart" state={items}>
                 <button
                   className="bg-secondary introheading-2 text-lg  py-2 px-6 rounded-sm"
                   onClick={() => {

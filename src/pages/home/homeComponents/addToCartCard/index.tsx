@@ -37,7 +37,7 @@ export default function AddToCartCard({ ...props }: IpreOrderCard) {
         </div>
       </Link>
       <div className="flex justify-between items-center">
-        <AddToCartBtn />
+        <AddToCartBtn id={Date.now()} title={props.name} image={props.imageurl}/>
         <span
           className="flex justify-center items-center p-2 rounded-full bg-primary"
           onClick={() => add({id:Date.now(), title:props.name, image:props.imageurl})}
