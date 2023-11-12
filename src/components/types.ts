@@ -27,7 +27,7 @@ interface Iviewallbtn{
 }
 
 interface IslideCartCard{
-    image: string;
+    image?: string;
     price: string;
-    name: string;
+    name?: string;
 }

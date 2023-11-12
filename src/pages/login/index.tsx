@@ -2,7 +2,9 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
 export default function LoginPage() {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm({
+    
+  });
   const onsubmit = ( ) =>{
     alert('Sorry!! Still under Maintainance')
   }

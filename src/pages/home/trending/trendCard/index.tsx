@@ -33,7 +33,7 @@ export default function TrendCard({ ...props }: Itrendcard) {
                 )}
               </div>
             </Link>
-            <AddToCartBtn />
+            <AddToCartBtn id={Date.now()} title={props.name} image={props.imageurl} />
           </div>
         </div>
       </div>
