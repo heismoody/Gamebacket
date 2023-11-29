@@ -19,6 +19,12 @@ export default function ShoppingList() {
           </tr>
         </thead>
         <tbody className="font-inter font-medium text-sm mobile:text-[8px] text-submessage text-center">
+          {
+            state.length === 0 &&
+            <tr>
+              <td className="py-6 text-submessage text-lg font-semibold" colSpan={6}>Sorry!! No Item In The Cart Or Shopping Item Selected</td>
+            </tr>
+          }
           {state.map((item: CartItem) => {
             return [
               <tr className="border-b border-submessage/30">
@@ -28,7 +34,7 @@ export default function ShoppingList() {
                   </div>
                 </td>
                 <td>{item.title}</td>
-                <td>50,000</td>
+                <td>{item.price}</td>
                 <td>
                   <input
                     type="number"
@@ -40,7 +46,7 @@ export default function ShoppingList() {
                 </td>
                 <td>50,000</td>
                 <td className="mobile:flex mobile:justify-center">
-                  <span className="border border-submessage/50 px-2 rounded py-1 text-red-500 mobile:hidden">
+                  <span className="border border-submessage/50 px-2 cursor-pointer rounded py-1 text-red-500 mobile:hidden">
                     Delete
                   </span>
                   <svg

@@ -4,11 +4,13 @@ export interface CartItem{
     id: number;
     title?: string;
     image?: string;
+    price?: number;
 }
 
 interface CartStore {
     items: CartItem[];
     add: (item: CartItem) => void;
+    // sum: (item: CartItem) => number;
     delete: () => void;
 }
 

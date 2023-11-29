@@ -7,7 +7,7 @@ export default function SlideCartCard({...props}:IslideCartCard) {
         </div>
         <div className="flex flex-col">
           <span>{props.name}</span>
-          <span>1 x {props.price}</span>
+          <span>{props.price}</span>
         </div>
       </div>
       <svg

@@ -15,32 +15,32 @@ export default function MostPopular() {
                 <AddToCartCard
                     imageurl="product-racing.jpg"
                     name="F2 Championship"
-                    actualprice="40,000 Tsh"
+                    actualprice = {40000}
                 />
                 <AddToCartCard
                     imageurl="product1.jpg"
                     name="Evil Insider"
-                    actualprice="40,000 Tsh"
+                    actualprice = {40000}
                 />
                 <AddToCartCard
                     imageurl="product-flights.jpg"
                     name="Flight Simulation 10"
-                    actualprice="40,000 Tsh"
+                    actualprice = {40000}
                 />
                 <AddToCartCard
                     imageurl="product-kungfumaster.jpg"
                     name="Kungfu Master"
-                    actualprice="40,000 Tsh"
+                    actualprice = {40000}
                 />
                 <AddToCartCard
                     imageurl="product-bussimulation.jpg"
                     name="Hello Friend 4"
-                    actualprice="40,000 Tsh"
+                    actualprice = {40000}
                 />
                 <AddToCartCard
                     imageurl="product-romans.jpg"
                     name="The Romans"
-                    actualprice="40,000 Tsh"
+                    actualprice = {40000}
                 />
             </div>
         </div>
