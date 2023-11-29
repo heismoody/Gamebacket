@@ -15,7 +15,7 @@ export default function AddToCartCard({ ...props }: IpreOrderCard) {
               className="imgrender hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-base hover:text-submessage mobile:line-clamp-1">
+          <span className="introheading-2 text-base hover:text-submessage line-clamp-1">
             {props.name}
           </span>
           <div className="flex items-center gap-x-2">
