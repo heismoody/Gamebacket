@@ -28,6 +28,6 @@ interface Iviewallbtn{
 
 interface IslideCartCard{
     image?: string;
-    price: string;
+    price?: number;
     name?: string;
 }

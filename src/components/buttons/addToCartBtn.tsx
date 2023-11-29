@@ -5,7 +5,8 @@ export default function AddToCartBtn({...props}: CartItem) {
   const item:CartItem = {
     id: props.id,
     title: props.title,
-    image: props.image
+    image: props.image,
+    price: props.price
   }
   return (
     <Link to='/shoppingcart' state={[item]}>
