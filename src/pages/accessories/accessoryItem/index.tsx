@@ -14,22 +14,22 @@ export default function AccessoryItem() {
           <AddToCartCard
             imageurl="/product-racing.jpg"
             name="PS4 PAD"
-            actualprice="40,000 Tsh"
+            actualprice={40000}
           />
           <AddToCartCard
             imageurl="/product1.jpg"
             name="TWIN PAD"
-            actualprice="40,000 Tsh"
+            actualprice={40000}
           />
           <AddToCartCard
             imageurl="/product-flights.jpg"
             name="PC XBOX"
-            actualprice="40,000 Tsh"
+            actualprice={40000}
           />
           <AddToCartCard
             imageurl="/product-kungfumaster.jpg"
             name="GAMING MOUSE"
-            actualprice="40,000 Tsh"
+            actualprice={40000}
           />
         </div>
       </div>

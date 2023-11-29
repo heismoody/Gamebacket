@@ -20,7 +20,7 @@ export default function CategoryPage() {
                 <AddToCartCard key={result.id}
                 imageurl="product-flights.jpg"
                 name={result.name}
-                actualprice="40,000 Tsh"
+                actualprice={40000}
                 />
               ]
             })
