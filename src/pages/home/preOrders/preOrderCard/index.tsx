@@ -4,7 +4,7 @@ import AddToCartBtn from "../../../../components/buttons/addToCartBtn";
 export default function PreOrderCard({ ...props }: IpreOrderCard) {
   return (
     <div className="flex flex-col gap-3 w-[230px] mobile:w-full">
-      <Link to='/gamedetails'>
+      <Link to="/gamedetails">
         <div className="flex flex-col gap-3">
           <div className="w-full rounded overflow-hidden">
             <img
@@ -13,18 +13,34 @@ export default function PreOrderCard({ ...props }: IpreOrderCard) {
               className="w-full h-full object-cover hover:scale-110 transition"
             />
           </div>
-          <span className="introheading-2 text-xl hover:text-submessage line-clamp-1">{props.name}</span>
+          <span className="introheading-2 text-xl hover:text-submessage line-clamp-1">
+            {props.name}
+          </span>
           <div className="flex items-center gap-x-2">
-            <span className={`descr-1 text-base ${props.promoprice ? 'line-through text-xs' : 'text-primary font-medium'}`}>{props.actualprice}</span>
-            {
-              props.promoprice &&
-              <span className="descr-1 text-base font-medium underline text-primary">{props.promoprice}</span>
-            }
+            <span
+              className={`descr-1 text-base ${
+                props.promoprice
+                  ? "line-through text-xs"
+                  : "text-primary font-medium"
+              }`}
+            >
+              {props.actualprice} Tsh
+            </span>
+            {props.promoprice && (
+              <span className="descr-1 text-base font-medium underline text-primary">
+                {props.promoprice} Tsh
+              </span>
+            )}
           </div>
         </div>
       </Link>
       <div className="flex justify-between items-center">
-        <AddToCartBtn />
+        <AddToCartBtn
+          id={Date.now()}
+          title={props.name}
+          image={props.imageurl}
+          price={props.promoprice ? props.promoprice : props.actualprice}
+        />
         <span className="flex justify-center items-center p-2 rounded-full bg-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"

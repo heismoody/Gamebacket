@@ -9,17 +9,17 @@ export const PreOrders = () => {
           <PreOrderCard
             imageurl="product-basketb.jpg"
             name="Basketball 2K2"
-            actualprice="40,000 Tsh"
+            actualprice = {40000}
           />
           <PreOrderCard
             imageurl="product-bussimulation.jpg"
             name="Bus Simulator 24"
-            actualprice="40,000 Tsh"
+            actualprice = {40000}
           />
           <PreOrderCard
             imageurl="product-warlord.jpg"
             name="Call of Warlords"
-            actualprice="40,000 Tsh"
+            actualprice = {40000}
           />
         </div>
         <div className="col-span-3 mobile:col-span-9 mobile:order-first p-8 bg-[url('/pattern-pre-order.png')] bg-cover">

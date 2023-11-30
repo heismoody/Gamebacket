@@ -3,10 +3,12 @@ import OptionComponent from "./navigationComponents/optioncomponent";
 import CartIcon from "./navigationComponents/cartIcon";
 import SlideCartCard from "./navigationComponents/slideCartCard";
 import { useState } from "react";
+import useCartStore from "../../store/store";
 
 const NavigationBar = () => {
   const [slideCart, setSlideCart] = useState(false);
   const [mobileMenu, setCloseMobileMenu] = useState(false);
+  const items = useCartStore((s) => s.items);
   return (
     <nav className="absolute inset-x-0 top-0 z-50 flex justify-center text-white font-oxanium w-full h-fit border-b-[1px] border-submessage/30">
       <div className="w-[90%] flex justify-between items-center py-3 relative">
@@ -228,31 +230,29 @@ const NavigationBar = () => {
                 <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
               </svg>
             </div>
-            <div className="w-[85%]">
-              <p className="descr-1">SORRY!! No products in the cart.</p>
-            </div>
+            {items.length === 0 && (
+              <div className="w-[85%]">
+                <p className="descr-1 text-base font-semibold text-center">
+                  SORRY!! No products in the cart.
+                </p>
+              </div>
+            )}
             <div className="w-[85%] flex flex-col">
-              <SlideCartCard
-                image="/product-snowball.jpg"
-                name="snowball"
-                price="40000 Tsh"
-              />
-              <SlideCartCard
-                image="/product-snowball.jpg"
-                name="snowball"
-                price="40000 Tsh"
-              />
-              <SlideCartCard
-                image="/product-snowball.jpg"
-                name="snowball"
-                price="40000 Tsh"
-              />
+              {items.map((item) => {
+                return [
+                  <SlideCartCard
+                    image={item.image}
+                    name={item.title}
+                    price={item.price}
+                  />,
+                ];
+              })}
               <div className="flex justify-center items-center py-5 border-b border-submessage">
                 <span className="text-lg font-semibold">Subtotal: price</span>
               </div>
             </div>
             <div className="w-[85%] flex justify-around py-5">
-              <Link to="/shoppingcart">
+              <Link to="/shoppingcart" state={items}>
                 <button
                   className="bg-secondary introheading-2 text-lg  py-2 px-6 rounded-sm"
                   onClick={() => {

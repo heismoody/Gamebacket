@@ -15,26 +15,26 @@ export default function Trending() {
                 <TrendCard
                     imageurl="trend1.jpg"
                     name="Warrior Queen"
-                    promoprice="15,000 Tsh"
-                    actualprice="20,000 Tsh"
+                    promoprice = {15000}
+                    actualprice = {20000}
                 />
                 <TrendCard
                     imageurl="trend2.jpg"
                     name="Basketball 2K2"
-                    promoprice="15,000 Tsh"
-                    actualprice="20,000 Tsh"
+                    promoprice = {15000}
+                    actualprice = {20000}
                 />
                 <TrendCard
                     imageurl="trend3.jpg"
                     name="MotorCross Race Deluxe"
-                    promoprice="15,000 Tsh"
-                    actualprice="20,000 Tsh"
+                    promoprice = {15000}
+                    actualprice = {20000}
                 />
                 <TrendCard
                     imageurl="trend4.jpg"
                     name="Special Forces: Dark Ops"
-                    promoprice="15,000 Tsh"
-                    actualprice="20,000 Tsh"
+                    promoprice = {15000}
+                    actualprice = {20000}
                 />
             </div>
         </div>

@@ -1,9 +1,14 @@
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
 export default function SignupPage() {
+  const {register, handleSubmit} = useForm();
   const [altcheck, setAltCheck] = useState(true);
   const [showPassword, setShowPassword] = useState(false)
+  const onsubmit = () => {
+    alert('Sorry!! We can not submit your details now')
+  }
   return (
     <section className="flex justify-center bg-[#11111b]">
       <div className="w-[50%] h-screen relative mobile:hidden">
@@ -17,23 +22,23 @@ export default function SignupPage() {
               Customer SignUp
             </span>
             <div className="flex flex-col gap-y-5 w-full introheading-2 text-base">
-              <form action="" method="post">
+              <form onSubmit={handleSubmit(onsubmit)}>
                 <div className="w-full flex justify-between">
                   <div className="w-[47%]">
-                    <label htmlFor="fname">First Name:</label>
+                    <label htmlFor="firstname">First Name:</label>
                     <input
+                    {...register('firstname')}
                       type="text"
-                      name="fname"
                       className="py-1 text-black outline-none px-2 w-full"
                       placeholder="John"
                       required
                     />
                   </div>
                   <div className="w-[47%]">
-                    <label htmlFor="lname">Last Name:</label>
+                    <label htmlFor="lastname">Last Name:</label>
                     <input
+                    {...register('lastname')}
                       type="text"
-                      name="lname"
                       className="py-1 text-black outline-none px-2 w-full"
                       placeholder="Doe"
                       required
@@ -42,10 +47,10 @@ export default function SignupPage() {
                 </div>
                 <div className="w-full flex justify-between">
                   <div className="w-[47%]">
-                    <label htmlFor="fname">Phone No:</label>
+                    <label htmlFor="phonenumber">Phone No:</label>
                     <input
+                    {...register('phonenumber')}
                       type="tel"
-                      name="fname"
                       className="py-1 text-black outline-none px-2 w-full"
                       placeholder="0684298314"
                       max={10}
@@ -57,7 +62,6 @@ export default function SignupPage() {
                       <label htmlFor="altnumber">Alternative No:</label>
                       <input
                         type="checkbox"
-                        name="altno"
                         className="outline-none"
                         id=""
                         onClick={() => {
@@ -66,8 +70,8 @@ export default function SignupPage() {
                       />
                     </div>
                     <input
+                    {...register('altnumber')}
                       type="tel"
-                      name="altnumber"
                       max={10}
                       disabled={altcheck}
                       className="py-1 text-black outline-none px-2 w-full"
@@ -77,8 +81,8 @@ export default function SignupPage() {
                 </div>
                 <label htmlFor="useremail">E-mail:</label>
                 <input
+                {...register('useremail')}
                   type="email"
-                  name="useremail"
                   className="py-1 text-black outline-none px-2 w-full"
                   placeholder="mymail@gmail.com"
                   required
@@ -86,11 +90,11 @@ export default function SignupPage() {
                 />
                 <div className="w-full flex justify-between mobile:flex-col">
                   <div className="w-[47%] mobile:w-full">
-                    <label htmlFor="fname">Password:</label>
+                    <label htmlFor="password">Password:</label>
                     <div className="flex items-center bg-white">
                       <input
+                        {...register('password')}
                         type={showPassword ? "text" : "password"}
-                        name="fname"
                         className="py-1 text-black outline-none px-2 w-full"
                         placeholder="Evans12@me"
                         required

@@ -14,38 +14,38 @@ export default function SimilarGames() {
         <AddToCartCard
           imageurl="trend1.jpg"
           name="Hello Friend 4"
-          actualprice="40,000 Tsh"
-          promoprice="20,000Tsh"
+          actualprice={40000}
+          promoprice={20000}
         />
         <AddToCartCard
           imageurl="product-bussimulation.jpg"
           name="Bus Simulator 24"
-          actualprice="40,000 Tsh"
-          promoprice="20,000Tsh"
+          actualprice={40000}
+          promoprice={20000}
         />
         <AddToCartCard
           imageurl="product-flights.jpg"
           name="Flight Simulation 10"
-          actualprice="40,000 Tsh"
-          promoprice="20,000Tsh"
+          actualprice={40000}
+          promoprice={20000}
         />
         <AddToCartCard
           imageurl="product-snowball.jpg"
           name="Snowball"
-          actualprice="40,000 Tsh"
-          promoprice="20,000Tsh"
+          actualprice={40000}
+          promoprice={20000}
         />
         <AddToCartCard
           imageurl="product-romans.jpg"
           name="The Romans"
-          actualprice="40,000 Tsh"
-          promoprice="20,000Tsh"
+          actualprice={40000}
+          promoprice={20000}
         />
         <AddToCartCard
           imageurl="product1.jpg"
           name="Evil Insider"
-          actualprice="40,000 Tsh"
-          promoprice="20,000Tsh"
+          actualprice={40000}
+          promoprice={20000}
         />
       </div>
     </div>

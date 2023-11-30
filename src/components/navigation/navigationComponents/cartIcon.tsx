@@ -1,4 +1,7 @@
+import useCartStore from "../../../store/store";
+
 export default function CartIcon() {
+  const items = useCartStore(s => s.items)
   return (
     <>
       <svg
@@ -16,7 +19,7 @@ export default function CartIcon() {
         />
       </svg>
       <div className="absolute -top-1 -right-2 rounded-full flex justify-center items-center text-sm font-bold text-black bg-primary w-5 h-5">
-        <span>10</span>
+        <span>{items.length}</span>
       </div>
     </>
   );

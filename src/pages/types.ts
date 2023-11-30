@@ -23,10 +23,10 @@ interface ItestimonyCard {
 }
 
 interface IpreOrderCard {
-  imageurl: string;
-  name: string;
-  actualprice: string;
-  promoprice?: string;
+  imageurl?: string;
+  name?: string;
+  actualprice?: number;
+  promoprice?: number;
 }
 
 interface IcardDetails {
@@ -47,8 +47,8 @@ interface IcategoryCard {
 interface Itrendcard {
   imageurl: string;
   name: string;
-  promoprice?: string;
-  actualprice: string;
+  promoprice?: number;
+  actualprice: number;
 }
 
 interface Ilandcard {

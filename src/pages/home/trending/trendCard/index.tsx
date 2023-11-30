@@ -15,7 +15,7 @@ export default function TrendCard({ ...props }: Itrendcard) {
             <span className="introheading-2 text-2xl mobile:text-base hover:text-submessage mobile:line-clamp-1">
               {props.name}
             </span>
-            <Link to='/shoppingcart'>
+            <Link to="/shoppingcart">
               <div className="flex items-center gap-x-2">
                 <span
                   className={`descr-1 text-base mobile:text-[8px] ${
@@ -24,16 +24,21 @@ export default function TrendCard({ ...props }: Itrendcard) {
                       : "text-primary font-medium"
                   }`}
                 >
-                  {props.actualprice}
+                  {props.actualprice} Tsh
                 </span>
                 {props.promoprice && (
                   <span className="descr-1 text-base mobile:text-xs font-medium underline text-primary">
-                    {props.promoprice}
+                    {props.promoprice} Tsh
                   </span>
                 )}
               </div>
             </Link>
-            <AddToCartBtn />
+            <AddToCartBtn
+              id={Date.now()}
+              title={props.name}
+              image={props.imageurl}
+              price={props.promoprice ? props.promoprice : props.actualprice}
+            />
           </div>
         </div>
       </div>
