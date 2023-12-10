@@ -23,6 +23,7 @@ import Dashboard from "../pages/adminpanel/dashboard";
 import OrderList from "../pages/adminpanel/orders";
 import Products from "../pages/adminpanel/products";
 import Users from "../pages/adminpanel/users";
+import Games from "../pages/games";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Homepage /> },
       { path: "/news", element: <News /> },
+      { path: "/games", element: <Games /> },
       { path: "/accessories", element: <Accessories /> },
       { path: "/accessory/item", element: <AccessoryItem /> },
       { path: "/about", element: <AboutUs /> },

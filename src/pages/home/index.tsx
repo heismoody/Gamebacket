@@ -4,8 +4,6 @@ import LatestNews from "./latestNews";
 import Testimonials from "./testimonials";
 import WeeklyDeals from "./weeklyDeals";
 import MostPopular from "./mostPopular";
-import Categories from "./categories";
-import ExploreCatalog from "./exploreCatalog";
 import Trending from "./trending";
 import AccessoriesSection from "./accessories";
 
@@ -17,8 +15,6 @@ const Homepage = () => {
       <AccessoriesSection/>
       <MostPopular />
       <WeeklyDeals />
-      <ExploreCatalog />
-      <Categories />
       <PreOrders />
       <Testimonials />
       <LatestNews />

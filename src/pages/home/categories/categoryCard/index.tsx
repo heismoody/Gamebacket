@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function CategoryCard({...props}:IcategoryCard) {
   return (
     <Link to='/categorypage'>
-    <div className="w-[210px] mobile:w-full h-[120px] mobile:h-[90px] rounded overflow-hidden relative group">
+    <div className="w-full h-[180px] mobile:h-[90px] rounded overflow-hidden relative group">
       <img
         src={props.imageURL}
         alt=""
